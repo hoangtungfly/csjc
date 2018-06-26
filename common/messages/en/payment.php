@@ -1,0 +1,31 @@
+<?php
+
+return [
+	'term_payment' => 'I have read and agree to <a style="color: #0089dc;" href="{link_privacy}">privacy policies</a> and <a style="color: #0089dc;"  href="{link_term}">terms and conditions</a> of 457 Australia and the services offered.',
+	'error_term_payment' => 'Please agree with this term.',
+	'Book a consultation' => 'Book a consultation',
+	'Payment' => 'Payment',
+	'Completed' => 'Completed',
+	'First Available Date' => 'First Available Date',
+	'Last Available Date' => 'Last Available Date',
+	'Time' => 'Time',
+	'Card information' => 'Card information',
+        'Your detail' => 'Your detail',
+	'Card name' => 'Card name',
+	'Expiry month/year' => 'Expiry month/year',
+	'Credit card number' => 'Credit card number',
+	'Security code' => 'Security code',
+	'For tax purposes' => 'For tax purposes',
+	'please_confirm' => 'Please confirm whether you live within or outside of Australia:',
+	'I’m living in Australia' => 'I’m living in Australia',
+	'I’m living outside of Australia' => 'I’m living outside of Australia',
+	'First name' => 'First name',
+        'Surname' => 'Surname',
+        'Email' => 'Email',
+        'Telephone' => 'Telephone',
+        'ignore_payment' => 'You have already purchased this service. Please access {label} page to review your applications',
+        'label_sponsorship' => 'Please enter your Sponsorship approval number',
+        'cant_not_create_user' => 'The payment process cannot be completed. This could be due to a temporary issue with your account. Please re-check your information.',
+        'cant_not_service' => 'The payment process cannot be completed. This could be due to a temporary issue with our service. Please re-check your information.',
+        'credit_card_is_not_accepted' => 'Credit card type is not accepted by this merchant account.'
+];
