@@ -1,1 +1,0 @@
-a:2:{i:0;a:4:{s:8:"required";s:41:"{attribute} không được để rỗng.";s:15:"captcha_captcha";s:35:"Mã bảo mật không chính xác.";s:16:"captcha_required";s:45:"Mã bảo mật không được để rỗng.";s:14:"email_required";s:25:"Email không chính xác.";}i:1;N;}

@@ -31,7 +31,6 @@ class MainController extends AiemController {
         }
         
         $alias = $model->alias;
-        var_dump($alias);exit;
         $this->alias = $model->alias;
         app()->language = $model->lang;
         session()->set('lang',app()->language);

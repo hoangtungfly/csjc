@@ -33,14 +33,14 @@ $menuLang = [
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <div class="language">
+<!--            <div class="language">
                 <?php foreach($menuLang as $key => $menu) { ?>
                 <a href="<?= $menu['href'] ?>" class="<?= app()->language == $menu['lang'] ? 'active' : '' ?>" title="<?= $menu['name'] ?>"><?= $menu['name'] ?></a>
                 <?php if($key < count($menuLang) - 1) { ?>
                 <span>|</span>
                 <?php } ?>
                 <?php } ?>
-            </div>
+            </div>-->
             <ul class="nav navbar-nav menu-bar">
                 <?php if ($menumain && isset($menumain[0])) { ?>
                     <?php foreach ($menumain[0] as $key => $menu) { ?>
