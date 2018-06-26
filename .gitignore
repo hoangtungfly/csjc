@@ -1,7 +1,8 @@
 vendor/*
 nbproject/*
-session/*
+sessions/*
 log/*
 cache/*
 backend/runtime/*
 frontend/runtime/*
+sessionsadmin/*
