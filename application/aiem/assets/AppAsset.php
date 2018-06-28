@@ -18,8 +18,8 @@ class AppAsset extends AssetBundle
             'css/animate.css',
 //            'css/font-awesome.min.css',
 //            'css/chosen.min.css',
-//            'css/owl.carousel.min.css',
-//            'css/owl.theme.min.css',
+            'css/owl.carousel.min.css',
+            'css/owl.theme.min.css',
 //            'css/owl.transitions.min.css',
 //            'css/main.css',
 //            'css/styles.css',
@@ -31,7 +31,8 @@ class AppAsset extends AssetBundle
             'js/bootstrap.min.js',
             'js/wow.min.js',
 //            'js/main.min.js',
-//            'js/owl.carousel.min.js',
+            'js/owl.carousel.min.js',
+            'js/script.js',
 //            'js/chosen.jquery.min.js',
         ];
         if(ENABLE_VERSION) {

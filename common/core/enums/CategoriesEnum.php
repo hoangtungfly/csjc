@@ -42,6 +42,7 @@ class CategoriesEnum extends GlobalEnumBase{
     const LANDINGPAGE_TYPE_FAQ = 'faq';
     const LANDINGPAGE_TYPE_VIDEOLIST = 'videolist';
     const LANDINGPAGE_TYPE_COLUMNS = 'columns';
+    const LANDINGPAGE_TYPE_BANNER = 'banner';
 
     
     public static function landingPageType() {
@@ -61,6 +62,7 @@ class CategoriesEnum extends GlobalEnumBase{
             self::LANDINGPAGE_TYPE_FAQ      	=> 'Faq',
             self::LANDINGPAGE_TYPE_VIDEOLIST    => 'Video List',
             self::LANDINGPAGE_TYPE_COLUMNS      => 'Columns',
+            self::LANDINGPAGE_TYPE_BANNER      => 'Banner',
 
        ];
     }

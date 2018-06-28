@@ -20,6 +20,14 @@ nav.navbar {
     background-color: white;
     border-bottom: none;
     box-shadow: 1px 1px 4px #ccc;
+    transition: height 0.4s;
+    -webkit-transition: height 0.4s;
+    -moz-transition: height 0.4s;
+    -o-transition: height 0.4s;
+}
+
+nav.navbar.smaller {
+    height: 75px;
 }
 
 nav.navbar.shrink {}
@@ -29,9 +37,22 @@ nav.navbar .logo {
     margin-top: 12px;
 }
 
+nav.navbar .logo.smaller {
+    width: 95px;
+    margin-top: 5px;
+}
+
 #navbar ul {
     list-style: none;
     margin-top: 35px;
+    transition: margin-top 0.4s;
+    -webkit-transition: margin-top 0.4s;
+    -moz-transition: margin-top 0.4s;
+    -o-transition: margin-top 0.4s;
+}
+
+#navbar ul.smaller {
+    margin-top: 25px;
 }
 
 #navbar ul li {
@@ -50,14 +71,63 @@ nav.navbar .logo {
     text-decoration: none;
 }
 
+#navbar .dropdown .dropdown-menu {
+    margin-top: 0;
+    padding-top: 5px;
+    border: none;
+    webkit-box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+#navbar .dropdown .dropdown-menu li {
+    display: block;
+    margin-right: 0;
+}
+
+#navbar .dropdown .dropdown-menu li a {
+    display: block;
+    width: 100%;
+    padding: 8px 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#navbar .dropdown .dropdown-menu a:hover {
+    background: #eaebea;
+}
+
+#navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 700px;
+    margin-top: 100px;
+    color: white;
+}
+
+.jumbotron .slide {
+    height: 700px;
+}
+
+.jumbotron .slide_1 {
     background: #0079AF url(imgs/nanopay-homepage-hero-r2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
-    margin-top: 100px;
-    color: white;
+}
+
+.jumbotron .slide_2 {
+    background: #0079AF url(imgs/nanopay-homepage-hero-r2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .owl-dots {
+    display: none;
 }
 
 .jumbotron .col_1 {
@@ -105,7 +175,7 @@ nav.navbar .logo {
 
 .section_1 .row_2 #f1_container {
     position: relative;
-    width: 260px;
+    max-width: 260px;
     height: 260px;
     margin: 10px auto;
     z-index: 1;
@@ -132,20 +202,24 @@ nav.navbar .logo {
     border-radius: 10px;
 }
 
+.section_1 .row_2 .front img {
+    width: 60px;
+}
+
 .section_1 .row_2 .front>div {
-    margin-top: 55px;
+    position: relative;
+    top: 50%!important;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .section_1 .row_2 .front p {
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 300;
     margin-top: 20px;
-}
-
-.section_1 .row_2 .back {
-    background-color: #eaebea;
-    border-radius: 10px;
 }
 
 .section_1 .row_2 .face {
@@ -162,7 +236,17 @@ nav.navbar .logo {
     padding: 10px;
     color: white;
     text-align: center;
-    background-color: #aaa;
+    background-color: #eaebea;
+    border-radius: 10px;
+    line-height: 260px;
+}
+
+.section_1 .row_2 .face.back p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 18px;
+    color: #777;
 }
 
 .section_2 .col {
@@ -238,8 +322,8 @@ nav.navbar .logo {
 
 .section_3 video {
     position: relative;
-    height: 250px;
-    width: 250px;
+    /*height: 250px;*/
+    width: 100%;
     cursor: pointer;
 }
 
@@ -281,7 +365,7 @@ nav.navbar .logo {
 }
 
 .section_5 h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 18px;
     color: #18a854;
 }
@@ -293,11 +377,11 @@ nav.navbar .logo {
 
 .section_5 li {
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .section_5 a {
-    color: #333;
+    color: #777;
 }
 
 .section_5 a:hover {
@@ -317,8 +401,63 @@ footer {
     font-weight: 400;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+footer p {
+    font-size: 16px;
+    color: #bababa;
+}
+
+/*ABOUT US*/
+.company {
+	margin-top: 100px;
+}
+.company h1{
+	font-size: 55px;
+}
+.company h2{
+	font-size: 40px;
+	color: #18a854;
+	font-weight: 300;
+}
+.information, .history, .hierachy, .services {
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.information h2, .history h2, .hierachy h2, .services h2 {
+	color: #18a854;
+	text-align: center;
+	    border-bottom: 1px solid;
+    margin: 0 auto 50px;
+    max-width: 300px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.information h3, .history h3, .hierachy h3, .services h3 {
+	    font-size: 15px;
+    font-weight: 300;
+        margin-top: -30px;
+        margin-bottom: 60px;
+}
+.services h4 {
+	color: #18a854;
+	margin-bottom: 25px;
+}
+.services p, .history p {
+	line-height: 26px;
+}
+
+@media (max-width: 992px) {
     #navbar ul li {
         margin-right: 15px;
+    }
+
+    .section_2 .col {
+        padding: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section_2 .col {
+        padding: 40px;
     }
 }
