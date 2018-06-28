@@ -7,58 +7,44 @@ $menufooter = CategoriesSearch::FooterMenu();
 $alias = $this->getParam('alias');
 ?>
 
-<div class="clear"></div>
-<div class="foot">
-    <div class="foot-bg">
-        <div>
-            <div class="wrap">
-                <div class="foot-top">
-                <div class="foot-nav">
-                    <h3>Li&ecirc;n hệ</h3>
-                    <span> </span>
-                    <div class="content-contact">
-                       <p><span><strong>Trụ sở ch&iacute;nh:</strong></span></p>
-                       <p><span>P.411 To&agrave; nh&agrave; TOYOTA Mỹ Đ&igrave;nh, 15 Phạm H&ugrave;ng, Nam Từ Li&ecirc;m, H&agrave; Nội.</span></p>
-                       <p style="white-space:nowrap;">Tel: (+84) 243.7957.717</p>
-                       <p style="white-space:nowrap;">Fax: (+84-4).3795.7716</p>
-                       <p><strong>Chi nh&aacute;nh ph&iacute;a Nam:</strong></p>
-                       <p>P.108, Tầng 10, Th&aacute;p B To&agrave; nh&agrave; S&agrave;i G&ograve;n Paragon, Số 3 Nguyễn Lương Bằng, Quận 7, Tp. HCM</p>
-                       <span> </span>
-                       <p><span>Tel: (+84) 285.4111.991</span></p>
-                       <span> </span>
-                       <p><span><strong>Email</strong>: cjsc@cjsc.vn<br />
-                          <strong>Hotline</strong>: (+84) 983.384.888</span><span></span>
-                       </p>
-                       <span> </span>
-                    </div>
-                 </div>
-                    <?php if($menufooter) { ?>
-                        <div class="foot-nav">
-                            <?php foreach($menufooter as $key => $menu) { ?>
-                                <a href="<?= $menu['alias'] ?>" class="<?= $menu['alias'] == $alias ? 'active' : '' ?>" title="<?= $menu['name'] ?>"><?= $menu['name'] ?></a>
-                            <?php } ?>
-                        </div>
-                    <?php } ?>
-                </div>
+<div class="container-fluid section_5">
+    <div class="row">
+        <div class="container">
+            <div class="col-xs-4">
+                <h4>Quick Links</h4>
+                <ul>
+                <?php if($menufooter) { ?>
+                        <?php foreach($menufooter as $key => $menu) { ?>
+                    <li>
+                        <a href="<?= $menu['alias'] ?>" 
+                           class="<?= $menu['alias'] == $alias ? 'active' : '' ?>" title="<?= $menu['name'] ?>"><?= $menu['name'] ?></a>
+                    </li>
+                        <?php } ?>
+                <?php } ?>
+                </ul>
+            </div>
+            <div class="col-xs-4">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#">+1 (416) 900-1111 (Toronto Office)</a></li>
+                    <li><a href="#">info@nanopay.net (General)</a></li>
+                    <li><a href="#">pr@nanopay.net (Press &amp; Media)</a></li>
+                    <li><a href="#">support@nanopay.net (Support)</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-4">
+                <h4>Connect With Us</h4>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>
-    
-    <?php if(isset($config['copyright'])):?>
-    <div class="wrap">
-        <div class="foot-bottom">
-           <div class="left">
-              <p><?= $config['copyright'] ?></p>
-           </div>
-           <div class="right">
-              <ul>
-                 <li><a href="#"><span class="fa fa-facebook"></span> </a></li>
-                 <li><a href="#"><span class="fa fa-twitter"></span> </a></li>
-                 <li><a href="#"><span class="fa fa-google-plus"></span> </a></li>
-              </ul>
-           </div>
-           <div class="clear"></div>
-        </div>
-     </div>
-    <?php endif;?>
 </div>
+<footer class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <p class="text-center"><?=isset($config['copyright']) ? $config['copyright'] : ''?></p>
+        </div>
+    </div>
+</footer>

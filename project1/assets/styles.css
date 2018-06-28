@@ -1,0 +1,463 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background: green;
+    border-radius: 20px;
+    padding: 5px 25px;
+    border: 2px #c8dd7e solid;
+    font-size: 16px;
+    background-color: #ffffff00;
+}
+
+button:hover {
+    background-color: #ecfbb545;
+}
+
+nav.navbar {
+    height: 100px;
+    background-color: white;
+    border-bottom: none;
+    box-shadow: 1px 1px 4px #ccc;
+    transition: height 0.4s;
+    -webkit-transition: height 0.4s;
+    -moz-transition: height 0.4s;
+    -o-transition: height 0.4s;
+}
+
+nav.navbar.smaller {
+    height: 75px;
+}
+
+nav.navbar.shrink {}
+
+nav.navbar .logo {
+    width: 120px;
+    margin-top: 12px;
+}
+
+nav.navbar .logo.smaller {
+    width: 95px;
+    margin-top: 5px;
+}
+
+#navbar ul {
+    list-style: none;
+    margin-top: 35px;
+    transition: margin-top 0.4s;
+    -webkit-transition: margin-top 0.4s;
+    -moz-transition: margin-top 0.4s;
+    -o-transition: margin-top 0.4s;
+}
+
+#navbar ul.smaller {
+    margin-top: 25px;
+}
+
+#navbar ul li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 45px;
+}
+
+#navbar ul li a {
+    color: #333;
+}
+
+#navbar ul li a:hover {
+    color: #18a854;
+    text-decoration: none;
+}
+
+#navbar .dropdown .dropdown-menu {
+    margin-top: 0;
+    padding-top: 5px;
+    border: none;
+    webkit-box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+#navbar .dropdown .dropdown-menu li {
+    display: block;
+    margin-right: 0;
+}
+
+#navbar .dropdown .dropdown-menu li a {
+    display: block;
+    width: 100%;
+    padding: 8px 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#navbar .dropdown .dropdown-menu a:hover {
+    background: #eaebea;
+}
+
+#navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 700px;
+    margin-top: 100px;
+    color: white;
+}
+
+.jumbotron .slide {
+    height: 700px;
+}
+
+.jumbotron .slide_1 {
+    background: #0079AF url(imgs/nanopay-homepage-hero-r2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .slide_2 {
+    background: #0079AF url(imgs/nanopay-homepage-hero-r2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .owl-dots {
+    display: none;
+}
+
+.jumbotron .col_1 {
+    margin-top: 100px;
+}
+
+.jumbotron h4 {
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.jumbotron p:nth-child(2) {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.jumbotron p:nth-child(3) {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.section_1 {
+    padding: 50px 0 100px;
+}
+
+.section_1 .row_1 h4 {
+    font-weight: 300;
+    font-size: 40px;
+    color: #18a854;
+    margin-bottom: 30px;
+}
+
+.section_1 .row_1 p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.section_1 .row_2 {
+    margin-top: 40px;
+}
+
+.section_1 .row_2 #f1_container {
+    position: relative;
+    max-width: 260px;
+    height: 260px;
+    margin: 10px auto;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.section_1 .row_2 #f1_container {
+    perspective: 1000;
+}
+
+.section_1 .row_2 #f1_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+
+.section_1 .row_2 #f1_container:hover #f1_card {
+    transform: rotateY(180deg);
+}
+
+.section_1 .row_2 .front {
+    background-color: #18a854;
+    border-radius: 10px;
+}
+
+.section_1 .row_2 .front img {
+    width: 60px;
+}
+
+.section_1 .row_2 .front>div {
+    position: relative;
+    top: 50%!important;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.section_1 .row_2 .front p {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.section_1 .row_2 .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.section_1 .row_2 .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #eaebea;
+    border-radius: 10px;
+    line-height: 260px;
+}
+
+.section_1 .row_2 .face.back p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 18px;
+    color: #777;
+}
+
+.section_2 .col {
+    height: 450px;
+    padding: 100px;
+}
+
+.section_2 .row {
+    background-color: #eaebea;
+}
+
+.section_2 .title {
+    margin-bottom: 40px;
+}
+
+.section_2 img {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.section_2 h4 {
+    padding-top: 9px;
+    margin-left: 55px;
+    color: #18a854;
+    font-weight: 300;
+    font-size: 22px
+}
+
+.section_2 p {
+    margin: 20px 0;
+    font-size: 16px
+}
+
+.section_2 .row_1 .col_2 {
+    background: #0079AF url(imgs/section_2/solutions-cross-border-payments.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_2 .row_2 .col_1 {
+    background: #0079AF url(imgs/section_2/solutions-b2b-payments.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_2 .row_3 .col_2 {
+    background: #0079AF url(imgs/section_2/solutions-digital-payments-r.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_2 .row_4 .col_1 {
+    background: #0079AF url(imgs/section_2/solutions-capital-markets.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_3 {
+    padding: 50px 0 50px;
+}
+
+.section_3 h4 {
+    font-weight: 300;
+    font-size: 40px;
+    color: #18a854;
+    margin-bottom: 30px;
+}
+
+.section_3 video {
+    position: relative;
+    /*height: 250px;*/
+    width: 100%;
+    cursor: pointer;
+}
+
+.section_3 .videoTitle {
+    position: absolute;
+    top: 25px;
+    left: 44px;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 4px #333333;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.section_4 {
+    padding: 90px 0 90px;
+    background: #0079AF url(imgs/bg-image-phone-payment.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_4 h4 {
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.section_4 button {
+    color: white;
+}
+
+.section_5 {
+    padding: 40px 0 50px;
+    background-color: #eaebea;
+}
+
+.section_5 h4 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: #18a854;
+}
+
+.section_5 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section_5 li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.section_5 a {
+    color: #777;
+}
+
+.section_5 a:hover {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.section_5 .fab {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+footer {
+    padding: 30px 0 17px;
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer p {
+    font-size: 16px;
+    color: #bababa;
+}
+
+/*ABOUT US*/
+.company {
+	margin-top: 100px;
+}
+.company h1{
+	font-size: 55px;
+}
+.company h2{
+	font-size: 40px;
+	color: #18a854;
+	font-weight: 300;
+}
+.information, .history, .hierachy, .services {
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.information h2, .history h2, .hierachy h2, .services h2 {
+	color: #18a854;
+	text-align: center;
+	    border-bottom: 1px solid;
+    margin: 0 auto 50px;
+    max-width: 300px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.information h3, .history h3, .hierachy h3, .services h3 {
+	    font-size: 15px;
+    font-weight: 300;
+        margin-top: -30px;
+        margin-bottom: 60px;
+}
+.services h4 {
+	color: #18a854;
+	margin-bottom: 25px;
+}
+.services p, .history p {
+	line-height: 26px;
+}
+
+@media (max-width: 992px) {
+    #navbar ul li {
+        margin-right: 15px;
+    }
+
+    .section_2 .col {
+        padding: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section_2 .col {
+        padding: 40px;
+    }
+}

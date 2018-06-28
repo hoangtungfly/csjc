@@ -1,11 +1,13 @@
-<div class="block block-main <?= isset($item['hieuung']) && (int)$item['hieuung'] ? 'transform_text_begin' : '' ?>">
-    <img class="background" src="<?= $item['background'] ?>" alt="<?= $item['title'] ?>" />
-    <div class="block-main-content">
+<div class="container-fluid section_4">
+    <div class="row">
         <div class="container">
-            <h2 class="<?= isset($item['hieuung']) && (int)$item['hieuung'] ? 'transform_text_top' : '' ?>"><?= $item['title'] ?><span></span></h2>
-            <div class="<?= isset($item['hieuung']) && (int)$item['hieuung'] ? 'transform_text_bottom' : '' ?>">
-                <?= $item['description'] ?>
-            </div>
+            <h4 class="text-center wow slideInDown" data-wow-duration="2s"><?= $item['title'] ?></h4>
+            <?php if(isset($item['description']) && $item['description']):?>
+                <?= $item['description']?>
+            <?php endif;?>
+            <button class="center-block">
+                Contact us today
+            </button>
         </div>
     </div>
 </div>
