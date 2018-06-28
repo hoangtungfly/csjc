@@ -1,11 +1,11 @@
-<div class="block block-text block-textright transform_text_begin">
-    <div class="container">
-        <div class="col-sm-half image <?= isset($item['hieuung'])&&(int)$item['hieuung'] ? 'transform_text_top' : '' ?>">
-            <img src="<?= $item['image'] ?>" alt="<?= $item['title'] ?>" />
+<div class="row row_<?=$key-1?>">
+    <div class="col-xs-6 col col_1"></div>
+    <div class="col-xs-6 col col_2">
+        <div class="title">
+            <img src="<?= $item['image'] ?>">
+            <h4><?=$item['title']?></h4>
         </div>
-        <div class="col-sm-half block-text-content transform_text_bottom">
-            <h2 class="<?= isset($item['hieuung'])&& (int)$item['hieuung'] ? 'transform_text_top' : '' ?>"><?= $item['title'] ?><span></span></h2>
-            <div class="description <?= isset($item['hieuung'])&&(int)$item['hieuung'] ? 'transform_text_bottom' : '' ?>"><?= $item['description'] ?></div>
-        </div>
+        <p class="wow slideInUp" data-wow-duration="2s"><?= $item['description'] ?></p>
+        <button><?=$item['text2']?></button>
     </div>
 </div>

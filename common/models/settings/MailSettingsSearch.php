@@ -157,14 +157,6 @@ class MailSettingsSearch extends MailSettings {
                 $mailer = new Dmailer();
                 $mailer->setSubject($model->mail_subject, $contact);
                 $array_replace = $contact->getObject($contact);
-                
-                $list_mobile = MobileSearch::getAllDropown();
-                $list_manufacturer = ManufacturerSearch::getAllDropown();
-                $list_brand = BrandSearch::getAllDropown();
-                $array_replace['mobile'] = isset($list_mobile[$contact->mobile_id]) ? $list_mobile[$contact->mobile_id] : $contact->mobile_id;
-                $array_replace['brand'] = isset($list_mobile[$contact->brand_id]) ? $list_mobile[$contact->brand_id] : $contact->brand_id;
-                $array_replace['manufacturer'] = isset($list_mobile[$contact->manufacturer_id]) ? $list_mobile[$contact->manufacturer_id] : $contact->manufacturer_id;
-                
                 $content = UtilityHtmlFormat::replaceTemplate($model->mail_msg, $array_replace);
                 $mailer->setBody($content);
                 if($type) {

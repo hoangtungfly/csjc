@@ -13,24 +13,26 @@ class AppAsset extends AssetBundle
     
     public function init() {
         $css = [
-//            'css/style.css',
             'css/bootstrap.min.css',
-            'css/font-awesome.min.css',
-            'css/chosen.min.css',
-            'css/owl.carousel.min.css',
-            'css/owl.theme.min.css',
-            'css/owl.transitions.min.css',
-            'css/main.css',
-            'css/styles.css',
-            'css/home.css',
-            'css/nivo-slider.css',
+            'css/style.css',
+            'css/animate.css',
+//            'css/font-awesome.min.css',
+//            'css/chosen.min.css',
+//            'css/owl.carousel.min.css',
+//            'css/owl.theme.min.css',
+//            'css/owl.transitions.min.css',
+//            'css/main.css',
+//            'css/styles.css',
+//            'css/home.css',
+//            'css/nivo-slider.css',
         ];
        $js = [
             'js/jquery-1.9.1.min.js',
             'js/bootstrap.min.js',
-            'js/main.min.js',
-            'js/owl.carousel.min.js',
-            'js/chosen.jquery.min.js',
+            'js/wow.min.js',
+//            'js/main.min.js',
+//            'js/owl.carousel.min.js',
+//            'js/chosen.jquery.min.js',
         ];
         if(ENABLE_VERSION) {
             if(count($css)) {
@@ -52,6 +54,6 @@ class AppAsset extends AssetBundle
     
     public $depends = [
 //        'yii\web\YiiAsset',
-        'frontend\assets\CommonAsset',
+//        'frontend\assets\CommonAsset',
     ];
 }

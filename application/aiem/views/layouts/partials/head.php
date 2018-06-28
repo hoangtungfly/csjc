@@ -85,6 +85,8 @@ $menu_rss = CategoriesSearch::getAllCategoryRss();
     <meta name="rating" content="general" />
     <meta name="copyright" content="<?=  strip_tags($config['copyright'])?>" />
     <link rel="canonical" href="<?=$config['curl']?>">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <?php if($menu_rss) { ?>
     <?php foreach($menu_rss as $key => $feed) { ?>
     <link href="<?=$feed['link_rss']?>" rel="alternate" type="application/rss+xml" title="<?=$feed['name']?>" />

@@ -52,26 +52,4 @@ class MainController extends AiemController {
         }
         return $this->render('404');
     }
-    
-    public function actionRegister() {
-        $model = new CompanySearch();
-        $post = r()->post();
-        $lang = $this->getParam('lang');
-        if($lang) {
-            app()->language = $lang;
-        }
-        if ($model->load($post) && $model->validate()) {
-            app()->language = $model->lang;
-            $model->save(false);
-            MailSettingsSearch::sendCompanyMailler($model);
-            $result = [
-                'code' => 200,
-                'title' => SettingsMessageSearch::t('company','title','Đăng ký thành công'),
-                'message' => SettingsMessageSearch::t('company','message','Đăng ký thành công. Chúng tôi sẽ liên hệ với bạn trong vòng ít phút tời!'),
-            ];
-        } else {
-            $result = ActiveForm::validate($model);
-        }
-        $this->jsonencode($result);
-    }
 }

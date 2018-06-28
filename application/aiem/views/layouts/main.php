@@ -17,29 +17,23 @@ if($this->context->contact == 1) {
     <?= $this->render('partials/head') ?>
     <body class="<?=$class?>" itemscope=itemscope itemtype="http://schema.org/WebPage">
 
-
         <div class="overlay-bg" style="background:#fff;z-index:9999;position:fixed; width:120%; height:120%; overflow:hidden"></div>
-        <div id="main">
-                <?php $this->beginBody() ?>
-                <?= $this->render('partials/header') ?>
-                <?php echo $content ?>
-                <?= $this->render('partials/footer') ?>
-                <?php
-                GlobalActiveForm::begin([
-                    'id' => 'user-default-form',
-                    'enableClientValidation' => false,
-                    'enableAjaxValidation' => true,
-                    'validateOnChange' => false,
-                    'validateOnSubmit' => true,
-                    'validateOnBlur' => false,
-                ]);
-                ?>
-                <?php GlobalActiveForm::end(); ?>
-                <?php $this->endBody() ?>
-
-        </div>
-
-
+        <?php $this->beginBody() ?>
+            <?= $this->render('partials/header') ?>
+            <?php echo $content ?>
+            <?= $this->render('partials/footer') ?>
+            <?php
+            GlobalActiveForm::begin([
+                'id' => 'user-default-form',
+                'enableClientValidation' => false,
+                'enableAjaxValidation' => true,
+                'validateOnChange' => false,
+                'validateOnSubmit' => true,
+                'validateOnBlur' => false,
+            ]);
+            ?>
+            <?php GlobalActiveForm::end(); ?>
+        <?php $this->endBody() ?>
     </body>
 </html>
 <?php $this->endPage() ?>

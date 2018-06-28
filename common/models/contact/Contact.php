@@ -19,10 +19,6 @@ use common\models\admin\SettingsMessageSearch;
  * @property integer $modified_time
  * @property integer $created_by
  * @property integer $modified_by
- * @property integer $mobile_id
- * @property integer $brand_id
- * @property integer $manufacturer_id
- * @property string $os_version
  */
 class Contact extends GlobalActiveRecord
 {
@@ -42,9 +38,8 @@ class Contact extends GlobalActiveRecord
         return [
             [['name'], 'required','message' => SettingsMessageSearch::t('form','required','{attribute} không được để rỗng.')],
             [['content'], 'string'],
-            [['created_time', 'modified_time', 'created_by', 'modified_by', 'mobile_id', 'brand_id', 'manufacturer_id'], 'integer'],
-            [['name', 'email', 'phone', 'address', 'title'], 'string', 'max' => 255],
-            [['os_version'], 'string', 'max' => 50]
+            [['created_time', 'modified_time', 'created_by', 'modified_by'], 'integer'],
+            [['name', 'email', 'phone', 'address', 'title'], 'string', 'max' => 255]
         ];
     }
 
@@ -65,10 +60,6 @@ class Contact extends GlobalActiveRecord
             'modified_time' => 'Modified Time',
             'created_by' => 'Created By',
             'modified_by' => 'Modified By',
-            'mobile_id' => 'Mobile ID',
-            'brand_id' => SettingsMessageSearch::t('contact','brand','Thiết bị di động'),
-            'manufacturer_id' => SettingsMessageSearch::t('contact','manufacturer','Nhà cung cấp'),
-            'os_version' => 'Os Version',
         ];
     }
 }
