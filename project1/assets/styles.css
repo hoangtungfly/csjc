@@ -113,14 +113,21 @@ nav.navbar .logo.smaller {
 }
 
 .jumbotron .slide_1 {
-    background: #0079AF url(imgs/nanopay-homepage-hero-r2.jpg);
+    background: #0079AF url(imgs/construction-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .jumbotron .slide_2 {
-    background: #0079AF url(imgs/nanopay-homepage-hero-r2.jpg);
+    background: #0079AF url(imgs/construction-banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .slide_3 {
+    background: #0079AF url(imgs/construction-banner3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -282,28 +289,28 @@ nav.navbar .logo.smaller {
 }
 
 .section_2 .row_1 .col_2 {
-    background: #0079AF url(imgs/section_2/solutions-cross-border-payments.jpg);
+    background: #0079AF url(imgs/lg_innotek_haiphong.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .section_2 .row_2 .col_1 {
-    background: #0079AF url(imgs/section_2/solutions-b2b-payments.jpg);
+    background: #0079AF url(imgs/project2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .section_2 .row_3 .col_2 {
-    background: #0079AF url(imgs/section_2/solutions-digital-payments-r.jpg);
+    background: #0079AF url(imgs/project3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .section_2 .row_4 .col_1 {
-    background: #0079AF url(imgs/section_2/solutions-capital-markets.jpg);
+    background: #0079AF url(imgs/project4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
