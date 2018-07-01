@@ -35,5 +35,7 @@ if($this->context->contact == 1) {
             <?php GlobalActiveForm::end(); ?>
         <?php $this->endBody() ?>
     </body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 </html>
 <?php $this->endPage() ?>

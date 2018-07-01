@@ -1,11 +1,10 @@
 <div class="row row_<?=$key-1?>">
-    <div class="col-xs-6 col col_1">
+    <div class="col-xs-6 col col_1 full-expand-xxs">
         <div class="title">
-            <img src="<?= $item['image'] ?>">
             <h4><?=$item['title']?></h4>
         </div>
-        <p class="wow slideInUp" data-wow-duration="2s"><?= $item['description'] ?></p>
+        <p class="wow slideInUp" data-wow-duration="1.5s"><?= $item['description'] ?></p>
         <button><?=$item['text2']?></button>
     </div>
-    <div class="col-xs-6 col col_2"></div>
+    <div class="col-xs-6 col col_2 col_2 hidden-xxs" style="background: #0079AF url(<?=isset($item['image']) ? $item['image'] : ''?>);background-position: center;background-repeat: no-repeat;background-size: cover;"></div>
 </div>

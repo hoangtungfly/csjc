@@ -87,6 +87,7 @@ $menu_rss = CategoriesSearch::getAllCategoryRss();
     <link rel="canonical" href="<?=$config['curl']?>">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <?php if($menu_rss) { ?>
     <?php foreach($menu_rss as $key => $feed) { ?>
     <link href="<?=$feed['link_rss']?>" rel="alternate" type="application/rss+xml" title="<?=$feed['name']?>" />
