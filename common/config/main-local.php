@@ -16,15 +16,6 @@ return [
             'enableSchemaCache' => true,
             'schemaCacheDuration' => 3600,
         ],
-//        'db2' => [
-//            'class' => 'yii\db\Connection',
-//            'dsn' => 'mysql:host='.DB_HOST.';dbname=' . DB_NAME2,
-//            'username' => DB_USERNAME,
-//            'password' => DB_PASSWORD,
-//            'charset' => 'utf8',
-//            'enableSchemaCache' => true,
-//            'schemaCacheDuration' => 3600,
-//        ],
         'view' => [
             'class' => 'common\core\view\GlobalView',
         ],
@@ -45,7 +36,7 @@ return [
                 ],
             ],
         ],
-        'language'  => 'en',
+        'language'  => 'en-US',
 //        'mailer' => [
 //            'class' => 'yii\swiftmailer\Mailer',
 //            'transport' => [
@@ -83,5 +74,5 @@ return [
             ],
         ],
     ],
-    'timeZone'  => 'Asia/Ho_Chi_Minh',
+    'timeZone'  => 'UTC',
 ];

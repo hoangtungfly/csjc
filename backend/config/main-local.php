@@ -2,8 +2,8 @@
 
 if(MAIN_ROUTE) {
     $rules = [
-        'admin'    => '/customer/customer/index',
-        ['pattern' => 'admin', 'route' => '/customer/customer/index', 'suffix' => '/'],
+        'admin'    => '/common/product/index',
+        ['pattern' => 'admin', 'route' => '/common/product/index', 'suffix' => '/'],
 
         'admin/<controller:\w+>/<action:\w+>' => '<controller>/<action>',
         'admin/<module:\w+>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
@@ -11,6 +11,7 @@ if(MAIN_ROUTE) {
 } else {
     $rules = [];
 }
+
 $ruleArray = require_once APPLICATION_PATH . '/application/' . WEBNAME . '/main.php';
 $rules = array_merge($rules,$ruleArray);
 $config = [
@@ -88,12 +89,6 @@ $config = [
 	'common' => [
 	'class' => 'backend\modules\common\CommonModule',
 	],
-	'ajantha' => [
-	'class' => 'backend\modules\ajantha\AjanthaModule',
-	],
-	'abc' => [
-	'class' => 'backend\modules\abc\AbcModule',
-	],
 	'web' => [
 	'class' => 'backend\modules\web\WebModule',
 	],
@@ -102,9 +97,6 @@ $config = [
 	],
 	'admin' => [
 	'class' => 'backend\modules\admin\AdminModule',
-	],
-	'metrixa' => [
-	'class' => 'backend\modules\metrixa\MetrixaModule',
 	],
 	'admanger' => [
 	'class' => 'backend\modules\admanger\AdmangerModule',
@@ -118,26 +110,16 @@ $config = [
 	'company' => [
 	'class' => 'backend\modules\company\CompanyModule',
 	],
-	'customer' => [
-	'class' => 'backend\modules\customer\CustomerModule',
-	],
-	'star' => [
-	'class' => 'backend\modules\star\StarModule',
-	],
-	'start' => [
-	'class' => 'backend\modules\start\StartModule',
-	],
 	// not delete
     ],
 ];
-
 if (YII_ENV != 'prod') {
     // configuration adjustments for 'dev' environment
-    $config['bootstrap'][] = 'debug';
-    $config['modules']['debug'] = [
-        'class' => 'yii\debug\Module',
-        'allowedIPs' => ['*'],
-    ];
+//    $config['bootstrap'][] = 'debug';
+//    $config['modules']['debug'] = [
+//        'class' => 'yii\debug\Module',
+//        'allowedIPs' => ['*'],
+//    ];
 //
     $config['bootstrap'][] = 'gii';
 }

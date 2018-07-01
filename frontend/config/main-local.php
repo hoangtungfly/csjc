@@ -34,18 +34,18 @@ $config = [
 //            'baseUrl' => '@web' . DIRECTORY_MAIN_2 . '/assets',
             'bundles' => [
                 // you can override AssetBundle configs here       
-//                'yii\web\JqueryAsset' => [
-//                    'basePath' => '@webroot/assets',
-//                    'js' => [],
-//                ],
-//                'yii\bootstrap\BootstrapAsset' => [
-//                    'basePath' => '@webroot/assets',
-//                    'css' => [],
-//                ],
-//                'yii\web\YiiAsset' => [
-//                    'basePath' => '@webroot/assets',
-////                    'baseUrl' => '@web',
-//                ],
+                'yii\web\JqueryAsset' => [
+                    'basePath' => '@webroot/assets',
+                    'js' => [],
+                ],
+                'yii\bootstrap\BootstrapAsset' => [
+                    'basePath' => '@webroot/assets',
+                    'css' => [],
+                ],
+                'yii\web\YiiAsset' => [
+                    'basePath' => '@webroot/assets',
+//                    'baseUrl' => '@web',
+                ],
             ],
         ],
         'errorHandler' => [
@@ -72,15 +72,15 @@ $config = [
     ],
 ];
 
- if (YII_ENV != 'prod') {
+if (YII_ENV != 'dev') {
     // configuration adjustments for 'dev' environment
-//    $config['bootstrap'][] = 'debug';
-//    $config['modules']['debug'] = [
-//        'class' => 'yii\debug\Module',
-//        'allowedIPs' => ['*'],
-//    ];
+    $config['bootstrap'][] = 'debug';
+    $config['modules']['debug'] = [
+        'class' => 'yii\debug\Module',
+        'allowedIPs' => ['*'],
+    ];
 
     $config['bootstrap'][] = 'gii';
- }
+}
 
 return $config;
