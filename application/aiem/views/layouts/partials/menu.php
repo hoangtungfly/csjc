@@ -20,7 +20,7 @@ $menuLang = [
 ?>
 
 <div id="navbar" class="navbar-collapse collapse">
-    <ul class="pull-right">
+    <ul class="nav navbar-nav">
         <?php if ($menumain && isset($menumain[0])) { ?>
             <?php foreach ($menumain[0] as $key => $menu) { ?>
                 <li class="<?= $menu['alias'] == $alias ? 'active' : '' ?>">
@@ -38,9 +38,9 @@ $menuLang = [
             <?php } ?>
         <?php } ?>
         <li>
-            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="icon" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a class="icon" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a class="icon" href="#"><i class="fab fa-linkedin-in"></i></a>
         </li>
 <!--        <div class="language">
             <?php foreach($menuLang as $key => $menu) { ?>
