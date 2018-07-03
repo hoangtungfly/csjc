@@ -26,10 +26,9 @@ $alias = $this->getParam('alias');
             <div class="col-xs-4">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="#">+1 (416) 900-1111 (Toronto Office)</a></li>
-                    <li><a href="#">info@nanopay.net (General)</a></li>
-                    <li><a href="#">pr@nanopay.net (Press &amp; Media)</a></li>
-                    <li><a href="#">support@nanopay.net (Support)</a></li>
+                    <li><a href="#">ADD: NO 32, LOT 06, ZONE 4.1CC, LANG HA -  THANH XUAN STREET, NHAN CHINH WARD, THANH XUAN DISTRICT,  HA NOI</a></li>
+                    <li><a href="tel:+84-24-6652-3588">TEL : +84-24-6652-3588</a></li>
+                    <li><a href="mailto:IBICON.INFO@GMAIL.COM">EMAIL: IBICON.INFO@GMAIL.COM</a></li>
                 </ul>
             </div>
             <div class="col-xs-4">
