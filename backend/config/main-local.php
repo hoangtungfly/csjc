@@ -110,6 +110,12 @@ $config = [
 	'company' => [
 	'class' => 'backend\modules\company\CompanyModule',
 	],
+	'project' => [
+	'class' => 'backend\modules\project\ProjectModule',
+	],
+	'video' => [
+	'class' => 'backend\modules\video\VideoModule',
+	],
 	// not delete
     ],
 ];

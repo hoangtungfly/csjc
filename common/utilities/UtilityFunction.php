@@ -83,5 +83,20 @@ class UtilityFunction {
         }
         return $result;
     }
-
+    
+    public static function getLang() {
+        if(session()->has('lang')) {
+            return session()->get('lang');
+        }
+        $lang = app()->language;
+        switch ($lang) {
+            case 'vi-VI' :
+            case 'vi' : 
+                $lang = 'vi';
+            default :
+                $lang = 'vi';
+        }
+        session()->set('lang', $lang);
+        return $lang;
+    }
 }

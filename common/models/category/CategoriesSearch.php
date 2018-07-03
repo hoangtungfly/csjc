@@ -347,14 +347,14 @@ class CategoriesSearch extends Categories {
             $keyCache = self::getKeyFileCache('MainMenu'.app()->language);
             $cache = new GlobalFileCache();
             $result = $cache->get($keyCache);
-            
-            if (!$result) {
+            if (!$result || !count($result)) {
                 $result = [];
+                $lang = \common\utilities\UtilityFunction::getLang();
                 $query = self::find();
                 $query->select(CategoriesEnum::SELECT);
                 $query->andFilterWhere(['=','status',StatusEnum::STATUS_ACTIVED]);
                 $query->andFilterWhere(['=','mainmenu',StatusEnum::STATUS_ACTIVED]);
-                $query->andFilterWhere(['=','lang',app()->language]);
+                $query->andFilterWhere(['=','lang',$lang]);
                 $query->orderBy('pid,mainmenu_odr');
                 $result = UtilityArray::ArrayPC(self::getArrayByObject($query->asArray()->all()));
                 $cache->set($keyCache, $result);
@@ -372,11 +372,12 @@ class CategoriesSearch extends Categories {
         $result = $cache->get($keyCache);
         if (!$result) {
             $result = [];
+            $lang = \common\utilities\UtilityFunction::getLang();
             $query = self::find();
             $query->select(CategoriesEnum::SELECT);
             $query->andFilterWhere(['=','footermenu',StatusEnum::STATUS_ACTIVED]);
             $query->andFilterWhere(['=','status',StatusEnum::STATUS_ACTIVED]);
-            $query->andFilterWhere(['=','lang',app()->language]);
+            $query->andFilterWhere(['=','lang',$lang]);
             $query->orderBy('footermenu_odr');
             $result = self::getArrayByObject($query->all());
             $cache->set($keyCache, $result);

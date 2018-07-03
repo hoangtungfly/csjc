@@ -26,6 +26,7 @@ use common\utilities\UtilityFile;
 use common\utilities\UtilityFunction;
 use common\utilities\UtilityHtmlFormat;
 use common\utilities\UtilityUrl;
+use common\models\project\ProjectSearch;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\db\ActiveRecord;
@@ -923,10 +924,8 @@ class GlobalActiveRecord extends ActiveRecord {
             $params = ['alias' => $item['alias'],];
             switch ($table_name) {
                 case NewsSearch::tableName():
+                case ProjectSearch::tableName():
                     $params['id'] = $item['id'];
-                    break;
-                case ProductSearch::tableName():
-//                    $params['id'] = $item['id'];
                     break;
             }
             $item['link_main'] = UtilityUrl::createUrl('/' . WEBNAME . '/'.($table_name == 'categories' ? 'product' : $table_name).'/index', $params);

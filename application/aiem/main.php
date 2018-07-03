@@ -2,7 +2,9 @@
 $alias = (WEBNAME != WEB_MAIN) ? WEBNAME . '/' : '';
 return array(
     'tin-tuc' => WEBNAME . '/news/list',
+    'news' => WEBNAME . '/news/list',
     'du-an' => WEBNAME . '/project/list',
+    'projects' => WEBNAME . '/project/list',
     $alias .'<alias:[a-zA-Z0-9-]+>' => DS . WEBNAME . '/main/category',
     ['pattern' => $alias.'<alias:[a-zA-Z0-9-]+>/', 'route' => WEBNAME . '/main/category', 'suffix' => '/'],
     
@@ -13,4 +15,5 @@ return array(
     'feeds' => WEBNAME . '/main/feed',
     
     '<alias:[a-zA-Z0-9-]+>-<id:[0-9]+>.html' => WEBNAME . '/news/index',
+    'project/<alias:[a-zA-Z0-9-]+>-<id:[0-9]+>.html' => WEBNAME . '/project/index',
 );
