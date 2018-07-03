@@ -1,6 +1,8 @@
 <?php
 $alias = (WEBNAME != WEB_MAIN) ? WEBNAME . '/' : '';
 return array(
+    'tin-tuc' => WEBNAME . '/news/list',
+    'du-an' => WEBNAME . '/project/list',
     $alias .'<alias:[a-zA-Z0-9-]+>' => DS . WEBNAME . '/main/category',
     ['pattern' => $alias.'<alias:[a-zA-Z0-9-]+>/', 'route' => WEBNAME . '/main/category', 'suffix' => '/'],
     
