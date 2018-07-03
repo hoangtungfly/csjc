@@ -19,12 +19,13 @@ class NewsController extends AiemController {
             $this->pageNotFound();
         }
         $news = NewsSearch::getObject($news_main);
-//        $category = CategoriesSearch::findOne($news_main->category_id);
-//        $listNews = $category ? NewsSearch::getListByCategoryid($category['id'], 1, 6, 0, [$news_main->id], [218,150]) : false;
+        $category = CategoriesSearch::findOne($news_main->category_id);
+        $listNews = $category ? NewsSearch::getListByCategoryid($category['id'], 1, 6, 0, [$news_main->id], [218,150]) : false;
 //        $tags = $news_main->tags ? explode(',', $news_main->tags) : false;
         return $this->Prender('index', [
 //            'news_main' => $news_main,
 //            'category'  => $category,
+            'listNews' => $listNews,
             'news' => $news,
         ]);
     }
