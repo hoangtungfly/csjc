@@ -2,21 +2,20 @@
 Navicat MySQL Data Transfer
 
 Source Server         : localhost
-Source Server Version : 50505
+Source Server Version : 50722
 Source Host           : localhost:3306
 Source Database       : csjc
 
 Target Server Type    : MYSQL
-Target Server Version : 50505
+Target Server Version : 50722
 File Encoding         : 65001
 
-Date: 2018-07-03 22:14:58
+Date: 2018-07-03 23:56:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
-
 -- ----------------------------
--- Table structure for advertise
+-- Table structure for `advertise`
 -- ----------------------------
 DROP TABLE IF EXISTS `advertise`;
 CREATE TABLE `advertise` (
@@ -41,7 +40,7 @@ CREATE TABLE `advertise` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for brand
+-- Table structure for `brand`
 -- ----------------------------
 DROP TABLE IF EXISTS `brand`;
 CREATE TABLE `brand` (
@@ -69,7 +68,7 @@ INSERT INTO `brand` VALUES ('6', 'Sony', '1', '1486398754', '1', '1486398754', n
 INSERT INTO `brand` VALUES ('7', 'Others', '1', '1486398797', '1', '1486398797', null, 'vi', '0');
 
 -- ----------------------------
--- Table structure for cart
+-- Table structure for `cart`
 -- ----------------------------
 DROP TABLE IF EXISTS `cart`;
 CREATE TABLE `cart` (
@@ -95,7 +94,7 @@ CREATE TABLE `cart` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for categories
+-- Table structure for `categories`
 -- ----------------------------
 DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories` (
@@ -157,13 +156,13 @@ INSERT INTO `categories` VALUES ('100100', 'Contact us', '', '1', null, '1479657
 INSERT INTO `categories` VALUES ('100104', 'About us', null, '1', null, '1485464440', '1', '1530599259', '1', '', '', '', null, '1', '', '[{\"type\":\"content\",\"title\":\"\",\"description\":\"\",\"content\":\"<div class=\\\"container company\\\">\\n<h1 class=\\\"text-center\\\">OIBI JSC</h1>\\n\\n<h2 class=\\\"text-center\\\">Dedicated and Devoted</h2>\\n\\n<hr /></div>\\n\\n<div class=\\\"container information\\\">\\n<h2>GENERAL INFORMATION</h2>\\n\\n<p style=\\\"font-weight: 500\\\">Company name: IBI CONSTRUCTION COMPANY LIMITED</p>\\n\\n<p style=\\\"font-weight: 500\\\">Abbreviation: IBI CONSTRUCTION CO., LTD</p>\\n\\n<p style=\\\"font-weight: 500\\\">Tax code: 0107991843</p>\\n\\n<p style=\\\"font-weight: 500\\\">Contact information:</p>\\n\\n<ul>\\n\\t<li>Office: No 32, lot 06, zone 4.1CC, Lang Ha - Thanh Xuan Street, Nhan Chinh ward, Thanh Xuan District, Ha Noi</li>\\n\\t<li>Tel: +84-24-6652 3588</li>\\n\\t<li>Fax: +84-24-6652 3588</li>\\n\\t<li>Email: ibicon.info@gmail.com</li>\\n</ul>\\n</div>\\n\\n<div class=\\\"container history\\\">\\n<h2>COMPANY HISTORY</h2>\\n\\n<p>IBI Construction Co., Ltd formerly known as Vietbuild Joint Stock Company Activities in the field of construction of reinforced concrete structures, technical infrastructure, architectural works, industrial works. Our company has been executing contracting services for famous enterprises like Samsung Electronics, LG Electronics, KR EMS, Bokwang, Glonics, DK Electronics...</p>\\n\\n<p>In the process of working with big partners, We have met the most stringent technical standards in the field of construction for large and huge factory like Samsung Metal factory, LG Innotek Hai Phong factory, Samsung Component No.4 factory. Besides, With a team of engineers trained in a professional working environment, we have created a high quality management style of IBI Construction Co., Ltd.</p>\\n\\n<p>We understand that the rapid progress of construction is a cost savings for both Employee and IBI contractors. Therefore, with the high working ability of the team of engineers, our employees have satisfied the large customers, It will certainly satisfy the customers who have cooperated with us and in the future.</p>\\n\\n<p>Our company is in the process of vigorous development, with the desire of a young business, We always cherish every opportunity, work well to satisfy all customers.</p>\\n</div>\\n\\n<div class=\\\"container hierachy\\\">\\n<h2>ORGANIZATIONAL CHART</h2>\\n<img alt=\\\"\\\" class=\\\"center-block\\\" src=\\\"images/about_us/organizational_chart.png\\\" /></div>\\n\\n<div class=\\\"container services\\\">\\n<h2>SERVICES</h2>\\n\\n<h3 class=\\\"text-center\\\">OUR SKILLS AND EXPERIENCES GUARANTEE YOUR SUCCESS</h3>\\n\\n<div class=\\\"col-xs-3\\\"><img alt=\\\"\\\" class=\\\"icon center-block\\\" src=\\\"images/about_us/icon-wrench.png\\\" />\\n<h4 class=\\\"title text-center\\\">MAINTENANCE</h4>\\n\\n<p class=\\\"content\\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\\n</div>\\n\\n<div class=\\\"col-xs-3\\\"><img alt=\\\"\\\" class=\\\"icon center-block\\\" src=\\\"images/about_us/icon-config.png\\\" />\\n<h4 class=\\\"title text-center\\\">WEP</h4>\\n\\n<p class=\\\"content\\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\\n</div>\\n\\n<div class=\\\"col-xs-3\\\"><img alt=\\\"\\\" class=\\\"icon center-block\\\" src=\\\"images/about_us/icon-crop.png\\\" />\\n<h4 class=\\\"title text-center\\\">DESIGN AND BUILD</h4>\\n\\n<p class=\\\"content\\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\\n</div>\\n\\n<div class=\\\"col-xs-3\\\"><img alt=\\\"\\\" class=\\\"icon center-block\\\" src=\\\"images/about_us/icon-chart.png\\\" />\\n<h4 class=\\\"title text-center\\\">GENERAL CONTRACTING</h4>\\n\\n<p class=\\\"content\\\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\\n</div>\\n</div>\\n\"}]', null, '', '1', '0', '1', '6', '0', '0', '0', '0', '0', null, null, 'en', 'about-us', '0', '0', '0', '0', '0', '0', null, '0', null, '0', null);
 INSERT INTO `categories` VALUES ('100109', 'Chính sách', null, '0', null, '1485464471', '1', '1530542215', '1', '', '', '', null, '1', '', '[{\"type\":\"content\",\"title\":\"CHÍNH SÁCH QUYỀN RIÊNG TƯ CỦA AIEM\",\"description\":\"\",\"content\":\"Để đảm bảo quyền ri&ecirc;ng tư của bạn, xin h&atilde;y đọc kỹ Ch&iacute;nh s&aacute;ch Quyền ri&ecirc;ng tư đối với việc sử dụng c&aacute;c ứng dụng của AIEM được liệt k&ecirc; dưới đ&acirc;y v&agrave; lưu &yacute; rằng Ch&iacute;nh s&aacute;ch Quyền ri&ecirc;ng tư c&oacute; thể thay đổi bất cứ l&uacute;c n&agrave;o. Ch&uacute;ng t&ocirc;i kh&ocirc;ng cắt bỏ c&aacute;c quyền của bạn bằng Ch&iacute;nh s&aacute;ch Quyền ri&ecirc;ng tư n&agrave;y m&agrave; kh&ocirc;ng c&oacute; sự đồng &yacute; từ bạn. Bất cứ cập nhật n&agrave;o đều sẽ được c&ocirc;ng bố tr&ecirc;n c&aacute;c ứng dụng của AIEM v&agrave; bạn c&oacute; thể theo d&otilde;i.<br />\\n<strong>I.</strong><strong>Thu thập, sử dụng v&agrave; điều chỉnh th&ocirc;ng tin c&aacute; nh&acirc;n</strong><br />\\n<strong>1.</strong><strong>Thu thập th&ocirc;ng tin c&aacute; nh&acirc;n</strong><br />\\nSau khi ho&agrave;n th&agrave;nh việc đăng k&yacute; th&agrave;nh vi&ecirc;n AIEM, tải v&agrave; sử dụng c&aacute;c ứng dụng li&ecirc;n quan của AIEMth&igrave; ứng dụng AIEM sẽ thu thập th&ocirc;ng tindữ liệu c&aacute; nh&acirc;n tr&ecirc;n cơ sở nhận biết thể theo c&aacute;c dịch vụ m&agrave; bạn đ&atilde; y&ecirc;u cầu. Nếu bạn sử dụng c&aacute;c dịch vụ li&ecirc;n quan ứng dụng AIEM với tư c&aacute;ch l&agrave; th&agrave;nh vi&ecirc;n của một doanh nghi&ecirc;̣p th&igrave; ngo&agrave;i những th&ocirc;ng tin đ&atilde; được đề cập ở tr&ecirc;n, ứng dụng sẽ sao lưu những th&ocirc;ng tin về số điện thoại v&agrave; thời gian m&agrave; bạn thực hiện cuộc gọi để tạo điều kiện cho việc hạch to&aacute;n v&agrave; tổng kết chi ph&iacute; cho doanh nghi&ecirc;̣p l&agrave; th&agrave;nh vi&ecirc;n của AIEM. Khi sử dụng các ứng dụng của AIEM thì có nghĩa là bạn đ&ocirc;̀ng ý đ&ecirc;̉ dữ li&ecirc;̣u cá nh&acirc;n của bạn được sao chép. Nếu bạn kh&ocirc;ng đồng &yacute; cung cấp th&ocirc;ng tin dữ liệu c&aacute; nh&acirc;n cho AIEM th&igrave; xin h&atilde;y ngừng sử dụng c&aacute;c dịch vụ của AIEM.<br />\\n&nbsp;<br />\\n<strong>2.</strong><strong>Sử dụng th&ocirc;ng tin c&aacute; nh&acirc;n</strong><br />\\nTrước khi bạn y&ecirc;u cầu AIEM xo&aacute; bỏ th&ocirc;ng tin c&aacute; nh&acirc;n của bạn khỏi cơ sở dữ liệu th&agrave;nh vi&ecirc;n của ch&uacute;ng t&ocirc;i,ch&uacute;ng t&ocirc;i xin đảm bảo việc thu thập v&agrave; lưu giữ th&ocirc;ng tin c&aacute; nh&acirc;n của bạn trong cơ sở dữ liệu th&agrave;nh vi&ecirc;n của AIEM một c&aacute;chan to&agrave;n. Điều n&agrave;y cho ph&eacute;p hệ thống thực hiện việc quản l&yacute; kỹ thuật, dịch vụ th&ocirc;ng tinli&ecirc;n lạc, cơ sở dữ liệu v&agrave; tư c&aacute;ch th&agrave;nh vi&ecirc;n. AIEM c&oacute; thể kết hợp những th&ocirc;ng tin kh&aacute;c với th&ocirc;ng tin c&aacute; nh&acirc;n của bạn để phục vụ cho việc cải tiến/ph&aacute;t triển c&aacute;c sản phẩm, dịch vụ, nội dung v&agrave; chương tr&igrave;nh quảng c&aacute;o của ch&uacute;ng t&ocirc;i. Th&ocirc;ng tin của bạn c&oacute; thể sẽ được sử dụng như sau:<br />\\nAIEM sẽ sử dụng th&ocirc;ng tin c&aacute; nh&acirc;n của bạn cho c&aacute;c mục đ&iacute;ch quản l&yacute; hoạt động v&agrave; kh&aacute;ch h&agrave;ng. Những mục đ&iacute;ch n&agrave;y bao gồm kiểm to&aacute;n nội bộ, ph&acirc;n t&iacute;ch v&agrave; nghi&ecirc;n cứu dữ liệu. Th&ocirc;ng tin c&aacute; nh&acirc;n của bạn cũng sẽ được sử dụng để th&ocirc;ng b&aacute;o cho bạn về những cập nhật của sản phẩm, th&ocirc;ng tin v&agrave; điều khoản dịch vụ.<br />\\nHỗ trợ ch&uacute;ng t&ocirc;i trong việc ph&aacute;t triển, ph&aacute;t h&agrave;nh v&agrave; n&acirc;ng cấp sản phẩm, dịch vụ, nội dung v&agrave; quảng c&aacute;o của AIEM.<br />\\n&nbsp;<br />\\nGửi đi những th&ocirc;ng b&aacute;o li&ecirc;n quan đến những th&ocirc;ng tin quan trọng, những điều chỉnh đối với c&aacute;c điều khoản v&agrave; điều kiện của việc sử dụng cũng như ch&iacute;nh s&aacute;ch của ch&uacute;ng t&ocirc;i. Tuy nhi&ecirc;n, AIEM kh&ocirc;ng buộc phải th&ocirc;ng b&aacute;o từng chi tiết cho bạn.<br />\\nSử dụng cho c&aacute;c nghi&ecirc;n cứu chuy&ecirc;n s&acirc;u v&agrave; c&aacute;c dịch vụ tư vấn kh&aacute;c.<br />\\n&nbsp;\\n<ol>\\n\\t<li value=\\\"3\\\">Điều chỉnh th&ocirc;ng tin c&aacute; nh&acirc;n</li>\\n</ol>\\nBạn c&oacute; thể điều chỉnh th&ocirc;ng tin t&agrave;i khoản AIEM bất cứ l&uacute;c n&agrave;o. Nghi&ecirc;m cấm việc sử dụng t&ecirc;n hoặc t&agrave;i khoản của người kh&aacute;c khi chưa được đồng &yacute;.<br />\\n&nbsp;<br />\\n<strong>4.</strong><strong>Xo&aacute; th&ocirc;ng tin c&aacute; nh&acirc;n</strong><br />\\nBạn c&oacute; thể y&ecirc;u cầu xo&aacute; bỏ t&agrave;i khoản v&agrave; th&ocirc;ng tin c&aacute; nh&acirc;n của bạn bất cứ l&uacute;c n&agrave;o. Th&ocirc;ng tin của bạn sẽ kh&ocirc;ng được xo&aacute; bỏ ho&agrave;n to&agrave;n khỏi hệ thống m&aacute;y chủ của ch&uacute;ng t&ocirc;i cho đến khi những quy tr&igrave;nh ph&ugrave; hợp được ho&agrave;n th&agrave;nh. Hệ thống lưu trữ của ch&uacute;ng t&ocirc;i c&oacute; thể vẫn lưu bản sao của những th&ocirc;ng tin n&agrave;y để đề ph&ograve;ng c&aacute;c hoạt động gian lận v&agrave; bất hợp ph&aacute;p.<br />\\n&nbsp;<br />\\n<strong>5.</strong><strong>Bạn sẽ c&oacute; những quyền sau đ&acirc;y nếu c&oacute; y&ecirc;u cầu bằng văn bản</strong>\\n\\n<ul>\\n\\t<li>Kiểm tra v&agrave; truy cập th&ocirc;ng tin dữ liệu c&aacute; nh&acirc;n của bạn</li>\\n\\t<li>Y&ecirc;u cầu cung cấp bản sao&nbsp; th&ocirc;ng tin dữ liệu c&aacute; nh&acirc;n của bạn</li>\\n\\t<li>Y&ecirc;u cầu chỉnh sửa th&ocirc;ng tin dữ liệu&nbsp; c&aacute; nh&acirc;n của bạn</li>\\n\\t<li>Ngừng việc thu thập v&agrave; sử dụng th&ocirc;ng tin dữ liệu c&aacute; nh&acirc;n của bạn</li>\\n\\t<li>Gỡ bỏ th&ocirc;ng tin dữ liệu c&aacute; nh&acirc;n của bạn khỏi cơ sở dữ liệu của ch&uacute;ng t&ocirc;i</li>\\n</ul>\\n&nbsp;<br />\\n<strong>II.</strong><strong>C&ocirc;ng khai th&ocirc;ng tin c&aacute; nh&acirc;n của bạn</strong><br />\\nAIEM cam kết sẽ kh&ocirc;ng b&aacute;n, cho thu&ecirc;, kinh doanh hoặc trao đổi bất cứ dữ liệu hoặc nội dung li&ecirc;n lạc &nbsp;m&agrave; kh&ocirc;ng c&oacute; sự đồng &yacute; của bạn, ngoại trừ những y&ecirc;u cầu ph&aacute;p l&yacute; hoặc của c&aacute;c cơ quan quản l&yacute; nh&agrave; nước, hoặc những l&yacute; do dưới đ&acirc;y:<br />\\n&nbsp;\\n<ol>\\n\\t<li>Th&ocirc;ng tin m&agrave; bạn tự nguyện c&ocirc;ng khai trong mục th&ocirc;ng tin của người d&ugrave;ng hoặctr&ecirc;n c&aacute;c diễn đ&agrave;n v&agrave; c&aacute;c nh&oacute;m thảo luận hoặc c&aacute;c &yacute; kiến m&agrave; bạn đưa l&ecirc;n sẽ được c&ocirc;ng khai v&agrave; do đ&oacute; sẽ được sử dụng lại hoặc đưa l&ecirc;n bởi những người kh&aacute;c.</li>\\n\\t<li>Trong trường hợp ph&aacute;p luật y&ecirc;u cầu, thực hiện những quyền hợp ph&aacute;p, tự vệ đối với những tuy&ecirc;n bố ph&aacute;p l&yacute;, bảo vệ lợi &iacute;ch của AIEM, chống lại gian lận, thực thi c&aacute;c ch&iacute;nh s&aacute;ch của ch&uacute;ng t&ocirc;i v&agrave;/hoặc bảo vệ c&aacute;c quyền, t&agrave;i sản, sự an to&agrave;n của b&ecirc;n thứ ba thi AIEM c&oacute; thể c&ocirc;ng khai th&ocirc;ng tin c&aacute; nh&acirc;n của bạn.</li>\\n\\t<li>Để cung cấp cho bạn c&aacute;c sản phẩm v&agrave; dịch vụ của AIEM theo y&ecirc;u cầu của bạn th&igrave; AIEM c&oacute; thể chia sẻ th&ocirc;ng tin c&aacute; nh&acirc;n của bạn cho c&aacute;cđối t&aacute;c của AIEM. AIEM sẽ lu&ocirc;n y&ecirc;u cầu c&aacute;c b&ecirc;n thứ ba n&agrave;y tu&acirc;n thủ luật ph&aacute;p v&agrave; sử dụng c&aacute;c biện ph&aacute;p ph&ugrave; hợp để bảo đảm dữ liệu th&ocirc;ng tin c&aacute; nh&acirc;n của bạn. Tuy nhi&ecirc;n, AIEM kh&ocirc;ng chịu tr&aacute;ch nhiệm đối với việc thực hiện của c&aacute;c đối t&aacute;c.</li>\\n\\t<li>Một số sản phẩm hay dịch vụ của AIEM c&oacute; thể l&agrave; c&aacute;c sản phẩm hợp t&aacute;c v&agrave; được cung cấp c&ugrave;ng hoặc th&ocirc;ng qua c&aacute;c đối t&aacute;c của AIEM. Nếu bạn đăng k&yacute; hoặc sử dụng c&aacute;c sản phẩm hoặc dịch vụ đ&oacute; th&igrave; bạn đồng &yacute; để AIEM v&agrave; c&aacute;c đối t&aacute;c sử dụng th&ocirc;ng tin c&aacute; nh&acirc;n của bạn.</li>\\n\\t<li>Th&ocirc;ng tin chi tiết của tất cả những hoạt động tr&ecirc;n t&agrave;i khoản AIEM của bạn bao gồm v&agrave; kh&ocirc;ng giới hạn cả lưu lượng, dữ liệu li&ecirc;n lạc v&agrave; dữ liệu trao đổi c&oacute; thể được truy cập bởi AIEM ngay khi m&agrave; nhận được sự đồng &yacute; của bạn. Bạn c&oacute; quy&ecirc;̀n kh&ocirc;ng đồng &yacute; cho ph&eacute;p truy cập những th&ocirc;ng tin đ&oacute; bất cứ l&uacute;c n&agrave;o. Nếu bạn sử dụng c&aacute;c dịch vụ li&ecirc;n quan ứng dụng AIEM với tư c&aacute;ch th&agrave;nh vi&ecirc;n dưới t&agrave;i khoản của một tổ chức n&agrave;o đ&oacute; th&igrave; bạn phải chấp nhận rằng AIEM c&oacute; thể cung cấp th&ocirc;ng tin số điện thoại v&agrave; thời gian bạn thực hiện cuộc gọi cho tổ chức đ&oacute;.</li>\\n\\t<li>Theo quy định, trong trường hợp c&oacute; sự thay đổi về quyền sử dụng, s&aacute;t nhập, hoặc thoả thuận đối với t&agrave;i khoản AIEM của bạnth&igrave; th&ocirc;ng tin c&aacute; nh&acirc;n của bạn cũng sẽ được chuyển giao.</li>\\n</ol>\\n&nbsp;<br />\\n<strong>III.</strong><strong>C&aacute;c ứng dụng kh&aacute;c</strong><br />\\nNếu bạn sử dụng bất cứ phần mềm đ&iacute;nh k&egrave;m n&agrave;o hoặc sử dụng ứng dụng của b&ecirc;n thứ ba trong khi c&ugrave;ng l&uacute;c sử dụng c&aacute;c ứng dụng của AIEM hoặc sử dụng bất cứ ứng dụng của b&ecirc;n thứ ba n&agrave;o hay c&aacute;c sản phẩm m&agrave; được hợp t&aacute;c sản xuất với AIEM hoặc được gắn c&aacute;c ứng dụng của AIEM th&igrave; c&aacute;c nh&agrave; cung cấp những ứng dụng đ&oacute; c&oacute; thể truy cập v&agrave;o mục th&ocirc;ng tin c&aacute; nh&acirc;ncủa bạn. AIEM kh&ocirc;ng v&agrave; kh&ocirc;ng thể kiểm so&aacute;t việc c&aacute;c nh&agrave; cung cấp ứng dụng sử dụng th&ocirc;ng tin c&aacute; nh&acirc;n của bạn thế n&agrave;o. Xin h&atilde;y chắc chắn rằng bạn đọc Ch&iacute;nh s&aacute;ch Quyền ri&ecirc;ng tư hoặc c&aacute;c điều khoản kh&aacute;c được &aacute;p dụng cho việc sử dụng c&aacute;c ứng dụng trước khi c&agrave;i đặt.<br />\\n&nbsp;<br />\\n<strong>IV.</strong><strong>Li&ecirc;n hệ với bạn</strong>\\n\\n<ol>\\n\\t<li>AIEM c&oacute; thể y&ecirc;u cầu bạn cung cấp th&ocirc;ng tin trải nghiệm dịch vụ để nhằmđ&aacute;nh gi&aacute; v&agrave; n&acirc;ng cao chất lượng dịch vụ. Bạn kh&ocirc;ng bị &eacute;p buộc phải cung cấp những th&ocirc;ng tin như vậy v&agrave;o một mốc thời gian cố định n&agrave;o.</li>\\n\\t<li>Tất cả th&ocirc;ng tin m&agrave; bạn tự nguyện cung cấp cho AIEM th&ocirc;ng qua sự đ&aacute;nh gi&aacute; hoặc khảo s&aacute;t sẽ được sử dụng để xem x&eacute;t đ&aacute;nh gi&aacute; v&agrave; để n&acirc;ng cao chất lượng sản phẩm v&agrave; hệ thống của AIEM.</li>\\n\\t<li>AIEM c&oacute; thể gửi th&ocirc;ng b&aacute;o cho bạn về c&aacute;c lỗi v&agrave; c&aacute;c vấn đề về dịch vụ. AIEM bảo lưu quyền sử dụng phần mềm AIEM hoặc tin nhắn SMS để th&ocirc;ng b&aacute;o cho bạn về bất cứ dịch vụ, tin nhắn quản trị v&agrave; tuy&ecirc;n bố sau c&ugrave;ng về c&aacute;c sản phẩm v&agrave; hệ thống của AIEM bao gồm v&agrave; kh&ocirc;ng giới hạn cả những tuy&ecirc;n bố đối với vi phạm đối với c&aacute;c quyền của b&ecirc;n thứ ba. Bạn kh&ocirc;ng nhất thiết phảitiếp nhận những th&ocirc;ng b&aacute;o n&agrave;y.</li>\\n\\t<li>AIEM c&oacute; thể sử dụng phần mềm của m&igrave;nh hoặc tin nhắn SMSđể gi&uacute;p bạn lu&ocirc;n được cập nhật với những sản phẩm v&agrave; phần mềm của AIEM m&agrave; bạn đ&atilde; mua v&agrave;<a name=\\\"_GoBack\\\">/</a>hoặc th&ocirc;ng b&aacute;o cho bạn về c&aacute;c sản phẩm kh&aacute;c hoặc c&aacute;c th&ocirc;ng tin về AIEM. Xin h&atilde;y th&ocirc;ng b&aacute;o cho ch&uacute;ng t&ocirc;i biết nếu bạn kh&ocirc;ng muốn nhận những th&ocirc;ng tin đ&oacute;.</li>\\n\\t<li>Nếu bạn đăng k&yacute; hoặc sử dụng c&aacute;c sản phẩm hoặc dịch vụm&agrave; được kết hợp sản xuất giữa AIEM với đối t&aacute;c th&igrave; bạn c&oacute; thể sẽ nhận được email hoặc tin nhắn từ c&aacute;c đối t&aacute;c tr&ecirc;n danh nghĩa AIEM.</li>\\n</ol>\\n&nbsp;<br />\\n<strong>V.</strong><strong>Li&ecirc;n hệ với ch&uacute;ng t&ocirc;i</strong><br />\\nNếu bạn c&oacute; bất kỳ thắc mắc g&igrave; li&ecirc;n quan đến Ch&iacute;nh s&aacute;ch Quyền ri&ecirc;ng tư, xin h&atilde;y li&ecirc;n hệ với ch&uacute;ng t&ocirc;i bất kể l&uacute;c n&agrave;o th&ocirc;ng qua chức năng &ldquo;Phản hồi&rdquo; tr&ecirc;n ứng dụng của AIEM.<br />\\n&nbsp;\"}]', null, '', '0', '0', '1', '3', '0', '0', '0', '0', '0', null, null, 'vi', 'chinh-sach', '0', '0', '0', '0', '0', '0', null, '0', null, '0', null);
 INSERT INTO `categories` VALUES ('100110', 'Tin tức', null, '1', null, '1530542259', '1', '1530626303', '1', '', '', '', null, '1', null, '[{\"type\":\"\"}]', null, 'tin-tuc', '1', '0', '1', '0', '0', '0', '0', '0', '0', null, null, 'vi', 'tin-tuc', '0', '0', '0', '0', '0', '0', null, '0', null, '0', null);
-INSERT INTO `categories` VALUES ('100111', 'Home', null, '1', null, '1530597211', '1', '1530599165', '1', 'Home', 'Home', 'Home', null, '1', null, '[{\"type\":\"slider\",\"slider\":\"[{\\\"image\\\":\\\"construction-banner.jpg\\\",\\\"title\\\":\\\"Showcase of our work for clients\\\",\\\"link\\\":\\\"#\\\"},{\\\"image\\\":\\\"construction-banner2.jpg\\\",\\\"title\\\":\\\"Transforming the way the world moves money\\\",\\\"link\\\":\\\"#\\\"},{\\\"image\\\":\\\"construction-banner3.jpg\\\",\\\"title\\\":\\\"Transforming the way the world moves money\\\",\\\"link\\\":\\\"#\\\"}]\"},{\"type\":\"columns\",\"title\":\"About us\",\"description\":\"IBI Construction Co., Ltd formerly known as Vietbuild Joint Stock Company Activities in the field of construction of reinforced concrete structures, technical infrastructure, architectural works, industrial works. Our company has been executing contracting services for famous enterprises like Samsung Electronics, LG Electronics, KR EMS, Bokwang, Glonics, DK Electronics...\",\"link\":\"\",\"arraymanyjson\":\"[{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"factory.png\\\",\\\"altimage\\\":\\\"Factory building\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"building.png\\\",\\\"altimage\\\":\\\"Architecture\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"tank.png\\\",\\\"altimage\\\":\\\"Underground construction\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"road.png\\\",\\\"altimage\\\":\\\"Road and bridge\\\"}]\"},{\"type\":\"textleft\",\"text2\":\"Learn more\",\"title\":\"LG Innotek Hai Phong factory\",\"description\":\"Add: Trang Due IP, An Duong District, Hai Phong, Viet Nam\\nProject: LG Innotek Hai Phong factory phase II\\nPakage 1: RC work\\nWorking period: 11/2017 – 07/2018.\",\"image\":\"lg_innotek_haiphong.jpg\",\"background\":\"\",\"link\":\"#\"},{\"type\":\"textright\",\"text2\":\"Learn more\",\"title\":\"KREMS Vietnam Factory, Hai Phong\",\"description\":\"Add: Trang Due IP, An Duong District, Hai Phong, Viet Nam\\nProject: KR EMS Vietnam factory\\nPakage 1: RC work\\nPakage 2: Civil work\\nWorking period: 09/2017 – 02/2018.\",\"image\":\"project2.jpg\",\"background\":\"\",\"link\":\"\"},{\"type\":\"textleft\",\"text2\":\"Learn More\",\"title\":\"Digital CasSamsung Electronic Vietnam Thai Nguyen project\",\"description\":\"Add: High Tech Complex, Yen Binh I industrial park, Pho Yen, Thai Nguyen.\\nProject: SEVT Yen Binh Metal Complex Construction Works.\\nPakage 1: Civil work \\nPakage 2: WWT Construction & Civil Work (Die Casting Line)\\nWorking period: 2014 - 2015.\",\"image\":\"project3.jpg\",\"background\":\"\",\"link\":\"\"},{\"type\":\"textright\",\"text2\":\"Learn more\",\"title\":\"Cammsys Vina factory project\",\"description\":\"Add: Ba Thien IP, Vinh Phuc\\nWorking period: 2014.\",\"image\":\"project4.jpg\",\"background\":\"\",\"link\":\"\"},{\"type\":\"videolist\",\"arraymanyjson\":\"[{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"poster_1.jpg\\\",\\\"altimage\\\":\\\"Video Title\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"poster_2.jpg\\\",\\\"altimage\\\":\\\"Video Title\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"poster_3.jpg\\\",\\\"altimage\\\":\\\"Video Title\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"poster_4.jpg\\\",\\\"altimage\\\":\\\"Video Title\\\"}]\"},{\"type\":\"main\",\"title\":\"Transform the way your business moves money.\",\"description\":\"\",\"background\":\"\"}]', null, '', '0', '0', '0', '0', '0', '0', '0', '0', '0', null, null, 'en', 'home', '1', '0', '0', '0', '0', '0', null, '0', null, '0', null);
+INSERT INTO `categories` VALUES ('100111', 'Home', null, '1', null, '1530597211', '1', '1530634421', '1', 'Home', 'Home', 'Home', null, '1', null, '[{\"type\":\"slider\",\"slider\":\"[{\\\"image\\\":\\\"construction-banner.jpg\\\",\\\"title\\\":\\\"We build the belief\\\",\\\"link\\\":\\\"#\\\"},{\\\"image\\\":\\\"Slider-3.jpg\\\",\\\"title\\\":\\\"Transforming the way the world moves money\\\",\\\"link\\\":\\\"#\\\"},{\\\"image\\\":\\\"slider4.jpg\\\",\\\"title\\\":\\\"Transforming the way the world moves money\\\",\\\"link\\\":\\\"#\\\"}]\"},{\"type\":\"columns\",\"title\":\"About us\",\"description\":\"IBI Construction Co., Ltd formerly known as Vietbuild Joint Stock Company Activities in the field of construction of reinforced concrete structures, technical infrastructure, architectural works, industrial works. Our company has been executing contracting services for famous enterprises like Samsung Electronics, LG Electronics, KR EMS, Bokwang, Glonics, DK Electronics...\",\"link\":\"\",\"arraymanyjson\":\"[{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"factory.png\\\",\\\"altimage\\\":\\\"Factory building\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"building.png\\\",\\\"altimage\\\":\\\"Architecture\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"tank.png\\\",\\\"altimage\\\":\\\"Underground construction\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"\\\",\\\"image\\\":\\\"road.png\\\",\\\"altimage\\\":\\\"Road and bridge\\\"}]\"},{\"type\":\"textleft\",\"text2\":\"Learn more\",\"title\":\"LG Innotek Hai Phong factory\",\"description\":\"Add: Trang Due IP, An Duong District, Hai Phong, Viet Nam\\nProject: LG Innotek Hai Phong factory phase II\\nPakage 1: RC work\\nWorking period: 11/2017 – 07/2018.\",\"image\":\"lg_innotek_haiphong.jpg\",\"background\":\"\",\"link\":\"#\"},{\"type\":\"textright\",\"text2\":\"Learn more\",\"title\":\"KREMS Vietnam Factory, Hai Phong\",\"description\":\"Add: Trang Due IP, An Duong District, Hai Phong, Viet Nam\\nProject: KR EMS Vietnam factory\\nPakage 1: RC work\\nPakage 2: Civil work\\nWorking period: 09/2017 – 02/2018.\",\"image\":\"project2.jpg\",\"background\":\"\",\"link\":\"\"},{\"type\":\"textleft\",\"text2\":\"Learn More\",\"title\":\"Digital CasSamsung Electronic Vietnam Thai Nguyen project\",\"description\":\"Add: High Tech Complex, Yen Binh I industrial park, Pho Yen, Thai Nguyen.\\nProject: SEVT Yen Binh Metal Complex Construction Works.\\nPakage 1: Civil work \\nPakage 2: WWT Construction & Civil Work (Die Casting Line)\\nWorking period: 2014 - 2015.\",\"image\":\"project3.jpg\",\"background\":\"\",\"link\":\"\"},{\"type\":\"textright\",\"text2\":\"Learn more\",\"title\":\"Cammsys Vina factory project\",\"description\":\"Add: Ba Thien IP, Vinh Phuc\\nWorking period: 2014.\",\"image\":\"project4.jpg\",\"background\":\"\",\"link\":\"\"},{\"type\":\"videolist\",\"arraymanyjson\":\"[{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"https://www.youtube.com/embed/qOJcOZwvP4Y\\\",\\\"image\\\":\\\"video_img1.png\\\",\\\"altimage\\\":\\\"\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSuperViral.TV%2Fvideos%2F1710307062340589%2F&show_text=0&width=333&height=189\\\",\\\"image\\\":\\\"video_img2.png\\\",\\\"altimage\\\":\\\"\\\"},{\\\"name\\\":\\\"\\\",\\\"link\\\":\\\"https://www.youtube.com/embed/xRiBCvVN3Lo\\\",\\\"image\\\":\\\"video_img3.png\\\",\\\"altimage\\\":\\\"\\\"}]\"}]', null, '', '0', '0', '0', '0', '0', '0', '0', '0', '0', null, null, 'en', 'home', '1', '0', '0', '0', '0', '0', null, '0', null, '0', null);
 INSERT INTO `categories` VALUES ('100112', 'Projects', null, '1', null, '1530616255', '1', '1530616255', null, '', '', '', null, '1', null, '[{\"type\":\"\"}]', null, '', '1', '0', '1', '0', '0', '0', '0', '0', '0', null, null, 'en', 'projects', '0', '0', '0', '0', '0', '0', null, '0', null, '0', null);
 INSERT INTO `categories` VALUES ('100113', 'Construction process', null, '1', null, '1530616291', '1', '1530616291', null, '', '', '', null, '1', null, '[{\"type\":\"\"}]', null, '', '1', '0', '1', '0', '0', '0', '0', '0', '0', null, null, 'en', 'construction-process', '0', '0', '0', '0', '0', '0', null, '0', null, '0', null);
 INSERT INTO `categories` VALUES ('100114', 'News', null, '1', null, '1530616320', '1', '1530616320', null, '', '', '', null, '1', null, '[{\"type\":\"\"}]', null, '', '1', '0', '1', '0', '0', '0', '0', '0', '0', null, null, 'en', 'news', '0', '0', '0', '0', '0', '0', null, '0', null, '0', null);
 
 -- ----------------------------
--- Table structure for category_news
+-- Table structure for `category_news`
 -- ----------------------------
 DROP TABLE IF EXISTS `category_news`;
 CREATE TABLE `category_news` (
@@ -185,7 +184,7 @@ INSERT INTO `category_news` VALUES ('0', '3', '1', '1530542120');
 INSERT INTO `category_news` VALUES ('0', '4', '1', '1530542160');
 
 -- ----------------------------
--- Table structure for category_product
+-- Table structure for `category_product`
 -- ----------------------------
 DROP TABLE IF EXISTS `category_product`;
 CREATE TABLE `category_product` (
@@ -201,7 +200,7 @@ CREATE TABLE `category_product` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for color
+-- Table structure for `color`
 -- ----------------------------
 DROP TABLE IF EXISTS `color`;
 CREATE TABLE `color` (
@@ -227,7 +226,7 @@ INSERT INTO `color` VALUES ('1004', 'Tím', '#ff0000', '1', '1479691521', '1', '
 INSERT INTO `color` VALUES ('1005', 'Lam', '#ff0000', '1', '1479691521', '1', '1479691521', null, '0');
 
 -- ----------------------------
--- Table structure for comment
+-- Table structure for `comment`
 -- ----------------------------
 DROP TABLE IF EXISTS `comment`;
 CREATE TABLE `comment` (
@@ -252,7 +251,7 @@ CREATE TABLE `comment` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for company
+-- Table structure for `company`
 -- ----------------------------
 DROP TABLE IF EXISTS `company`;
 CREATE TABLE `company` (
@@ -279,7 +278,7 @@ CREATE TABLE `company` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for company_category
+-- Table structure for `company_category`
 -- ----------------------------
 DROP TABLE IF EXISTS `company_category`;
 CREATE TABLE `company_category` (
@@ -312,7 +311,7 @@ INSERT INTO `company_category` VALUES ('11', 'State enterprises', '1', '14860659
 INSERT INTO `company_category` VALUES ('12', 'Private enterprise', '1', '1486065940', '1', '1486065940', null, 'en', '0');
 
 -- ----------------------------
--- Table structure for company_pbx
+-- Table structure for `company_pbx`
 -- ----------------------------
 DROP TABLE IF EXISTS `company_pbx`;
 CREATE TABLE `company_pbx` (
@@ -339,7 +338,7 @@ INSERT INTO `company_pbx` VALUES ('5', 'Internet telephone switchboard (IP PBX)'
 INSERT INTO `company_pbx` VALUES ('6', 'No telephone exchange', '1', '1486065506', '1', '1486065506', null, 'en', '0');
 
 -- ----------------------------
--- Table structure for company_size
+-- Table structure for `company_size`
 -- ----------------------------
 DROP TABLE IF EXISTS `company_size`;
 CREATE TABLE `company_size` (
@@ -367,7 +366,7 @@ INSERT INTO `company_size` VALUES ('6', '501~1000', '1', '1486065642', '1', '148
 INSERT INTO `company_size` VALUES ('7', '+1000', '1', '1486065642', '1', '1486065642', null, 'vi', '0');
 
 -- ----------------------------
--- Table structure for contact
+-- Table structure for `contact`
 -- ----------------------------
 DROP TABLE IF EXISTS `contact`;
 CREATE TABLE `contact` (
@@ -391,7 +390,7 @@ CREATE TABLE `contact` (
 INSERT INTO `contact` VALUES ('1', 'tung', 'tunghus1993@gmail.com', '01634619535', null, null, 'test', '1530113730', '1530113730', '1', null);
 
 -- ----------------------------
--- Table structure for copyweb
+-- Table structure for `copyweb`
 -- ----------------------------
 DROP TABLE IF EXISTS `copyweb`;
 CREATE TABLE `copyweb` (
@@ -435,7 +434,7 @@ INSERT INTO `copyweb` VALUES ('42', 'http://giza.com.vn/media/video/', '\n<!DOCT
 INSERT INTO `copyweb` VALUES ('43', 'http://cjsc.vn/lien-he.htm', '<!DOCTYPE html>\n<html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"title\" content=\"Li&ecirc;n hệ\"/><meta name=\"keyword\" content=\"\"/><meta name=\"description\" content=\"\"/><meta property=\"og:url\" content=\"http://cjsc.vn/lien-he.htm\"/><meta property=\"og:locale\" content=\"vi_VN\"/><meta property=\"og:type\" content=\"article\"/><meta property=\"og:title\" content=\"Li&ecirc;n hệ\"/><meta property=\"og:description\" content=\"\"/><meta property=\"og:image\" content=\"http://cjsc.vn/public/assets/frontend/img/fb-image-default.jpg\"/><meta itemprop=\"name\" content=\"Liên hệ\"/><meta itemprop=\"description\" content=\"\"/>\n    <title>Liên hệ | Công ty cổ phần Ứng dụng và chuyển giao công nghệ xây dựng - CJSC</title>\n\n    <!-- Favicon -->\n    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"/assets/frontend/img/favicon/apple-icon-57x57.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"/assets/frontend/img/favicon/apple-icon-60x60.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/assets/frontend/img/favicon/apple-icon-72x72.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"/assets/frontend/img/favicon/apple-icon-76x76.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/assets/frontend/img/favicon/apple-icon-114x114.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/assets/frontend/img/favicon/apple-icon-120x120.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"/assets/frontend/img/favicon/apple-icon-144x144.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/assets/frontend/img/favicon/apple-icon-152x152.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/assets/frontend/img/favicon/apple-icon-180x180.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"/assets/frontend/img/favicon/android-icon-192x192.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/assets/frontend/img/favicon/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"/assets/frontend/img/favicon/favicon-96x96.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/assets/frontend/img/favicon/favicon-16x16.png\">\n\n    <!-- Font awesome -->\n    <link rel=\"stylesheet\" href=\"/assets/frontend/libs/fa/css/font-awesome.min.css\">\n    <!-- Nivo styles -->\n    <link rel=\"stylesheet\" href=\"/assets/frontend/libs/nivo/themes/default/default.css\" type=\"text/css\" media=\"screen\" />\n    <link rel=\"stylesheet\" href=\"/assets/frontend/libs/nivo/nivo-slider.css\" type=\"text/css\" media=\"screen\" />\n    <!-- Bootstrap styles -->\n    <link rel=\"stylesheet\" href=\"/assets/frontend/libs/bootstrap/css/bootstrap.min.css\">\n    <!-- Carousel styles -->\n    <link href=\"/assets/frontend/libs/carousel/owl-carousel/owl.carousel.css\" rel=\"stylesheet\">\n    <link href=\"/assets/frontend/libs/carousel/owl-carousel/owl.theme.css\" rel=\"stylesheet\">\n    <!-- Base style -->\n    <link rel=\"stylesheet\" href=\"/assets/frontend/css/styles.css\" type=\"text/css\" />\n    <!-- jQuery base -->\n    <script src=\"/assets/frontend/js/jquery1.12.4.min.js\" type=\"text/javascript\"></script>\n    <!-- Nivo slide scripts -->\n    <script type=\"text/javascript\" src=\"/assets/frontend/libs/nivo/jquery.nivo.slider.js\"></script>\n    <script src=\"/assets/frontend/libs/bootstrap/js/bootstrap.min.js\"></script>\n    <!-- Bootstrap scripts -->\n    <script src=\"/assets/frontend/libs/vslider/scripts/jquery.bootstrap.newsbox.js\" type=\"text/javascript\"></script>\n    <!-- Carousel script -->\n    <script src=\"/assets/frontend/libs/carousel/owl-carousel/owl.carousel.js\"></script>\n    <!-- Base script -->\n    <script src=\"/assets/frontend/js/scripts.js\" type=\"text/javascript\"></script>\n\n    <!-- Global site tag (gtag.js) - Google Analytics -->\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-115973400-1\"></script>\n    <script>\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag(\'js\', new Date());\n\n        gtag(\'config\', \'UA-115973400-1\');\n    </script>\n</head>\n<body>\n    <!-- Google Code for Remarketing Tag -->\n    <!--------------------------------------------------\n    Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup\n    --------------------------------------------------->\n    <script type=\"text/javascript\">\n        /* <![CDATA[ */\n        var google_conversion_id = 811963739;\n        var google_custom_params = window.google_tag_params;\n        var google_remarketing_only = true;\n        /* ]]> */\n    </script>\n    <script type=\"text/javascript\" src=\"//www.googleadservices.com/pagead/conversion.js\">\n    </script>\n    <noscript>\n        <div style=\"display:inline;\">\n            <img height=\"1\" width=\"1\" style=\"border-style:none;\" alt=\"\" src=\"//googleads.g.doubleclick.net/pagead/viewthroughconversion/811963739/?guid=ON&amp;script=0\"/>\n        </div>\n    </noscript>\n	<!-- Load Facebook SDK for JavaScript -->\r\n    <div id=\"fb-root\"></div>\r\n    <script>(function(d, s, id) {\r\n            var js, fjs = d.getElementsByTagName(s)[0];\r\n            if (d.getElementById(id)) return;\r\n            js = d.createElement(s); js.id = id;\r\n            js.src = \"//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10&appId=287259161610431\";\r\n            fjs.parentNode.insertBefore(js, fjs);\r\n        }(document, \'script\', \'facebook-jssdk\'));\r\n    </script>\r\n    <!-- Load Facebook SDK for JavaScript -->\r\n\r\n    <div class=\"header\">\r\n    <div class=\"wrap\">\r\n        <div class=\"header-top\">\r\n            <div class=\"header-top-left left\">\r\n                <a href=\"/\">\r\n                    <img src=\"/assets/frontend/img/logo1.png\" alt=\"CJSC\"/>\r\n                    <!-- <img src=\"/assets/frontend/img/logo2.png\" alt=\"CJSC\" /> -->\r\n                </a>\r\n                <p class=\"upper\">Investor\'s Confidence</p>\r\n            </div>\r\n            <div class=\"header-top-right right\">\r\n                                <ul class=\"flag\">\r\n                    <li>\r\n                        <a target=\"_blank\" href=\"/sitemap.html\">Sitemap</a>\r\n                    </li>\r\n                    <li class=\"seperate\"></li>\r\n                                        <li>\r\n                        <a href=\"/vi\">\r\n                            <img src=\"/public/uploads/images/Website/vietnam.jpg\" alt=\"\"/>\r\n                        </a>\r\n                    </li>\r\n                                        <li>\r\n                        <a href=\"/en\">\r\n                            <img src=\"/public/uploads/images/Website/english.jpg\" alt=\"\"/>\r\n                        </a>\r\n                    </li>\r\n                                        <li>\r\n                        <a href=\"/cn\">\r\n                            <img src=\"/public/uploads/images/Website/china.jpg\" alt=\"\"/>\r\n                        </a>\r\n                    </li>\r\n                                    </ul>\r\n                                <form method=\"post\">\r\n                    <input type=\"text\" name=\"search-txt\" placeholder=\"Tìm kiếm\"/>\r\n                    <i class=\"fa fa-search\" aria-hidden=\"true\"></i>\r\n                    <input type=\"submit\" name=\"submit-btn\" style=\"display: none;\"/>\r\n                </form>\r\n                <div class=\"clear\"></div>\r\n            </div>\r\n            <div class=\"clear\"></div>\r\n        </div>\r\n        <div class=\"header-menu\">\r\n            <i class=\"fa fa-bars\" aria-hidden=\"true\" style=\"display: none;\"></i>\r\n\r\n            <ul class=\"main-menu\"><li><a  href=\'/\'>Trang chủ</a></li><li><a >Giới thiệu<i class=\"fa fa-caret-down\" aria-hidden=\"true\"></i></a><ul class=\"sub-menu\"><li><a  href=\'/gioi-thieu/tong-quan-ve-cong-ty.htm\'>Tổng quan về công ty</a></li><li><a  href=\'/gioi-thieu/nhan-su.htm\'>Nhân sự</a></li><li><a  href=\'/gioi-thieu/so-do-to-chuc.htm\'>Sơ đồ tổ chức</a></li><li><a  href=\'/gioi-thieu/thu-danh-gia.htm\'>Thư đánh giá</a></li><li><a  href=\'/gioi-thieu/khach-hang-va-doi-tac.htm\'>Khách hàng và đối tác</a></li><li><a  href=\'/gioi-thieu/cong-ty-thanh-vien.htm\'>Công ty thành viên</a></li><li><a  href=\'/gioi-thieu/chung-chi-iso-va-ohsas.htm\'>Chứng chỉ ISO và OHSAS</a></li><li><a  href=\'/gioi-thieu/chinh-sach-an-toan-suc-khoe-nghe-nghiep-va-moi-truong.htm\'>Chính sách an toàn sức khoẻ - Nghề nghiệp và môi trường</a></li><li><a  href=\'/gioi-thieu/chinh-sach-nhan-su.htm\'>Chính sách nhân sự</a></li></ul></li><li><a  href=\"/du-an.htm\">Dự án<i class=\"fa fa-caret-down\" aria-hidden=\"true\"></i></a><ul class=\"sub-menu group\"><li><a  href=\"/du-an/theo-du-an.htm\">Theo dự án</a><ul class=\"sub-menu\"><li><a  href=\'/du-an/theo-du-an/thiet-ke.htm\'>Thiết kế</a></li><li><a  href=\'/du-an/theo-du-an/thi-cong.htm\'>Thi công</a></li><li><a  href=\'/du-an/theo-du-an/dan-dung.htm\'>Dân dụng</a></li><li><a  href=\'/du-an/theo-du-an/cong-nghiep.htm\'>Công nghiệp</a></li><li><a  href=\'/du-an/theo-du-an/ha-tang.htm\'>Hạ tầng</a></li></ul></li><li><a  href=\"/du-an/theo-thoi-gian.htm\">Theo thời gian</a><ul class=\"sub-menu\"><li><a  href=\'/du-an/theo-thoi-gian/2018.htm\'>2018</a></li><li><a  href=\'/du-an/theo-thoi-gian/2017.htm\'>2017</a></li><li><a  href=\'/du-an/theo-thoi-gian/2016.htm\'>2016</a></li><li><a  href=\'/du-an/theo-thoi-gian/2015.htm\'>2015</a></li><li><a  href=\'/du-an/theo-thoi-gian/2014.htm\'>2014</a></li><li><a  href=\'/du-an/theo-thoi-gian/2013.htm\'>2013</a></li></ul></li><li><a  href=\"/du-an/theo-vi-tri.htm\">Theo vị trí</a><ul class=\"sub-menu\"><li><a  href=\'/du-an/theo-vi-tri/mien-bac.htm\'>Miền Bắc</a></li><li><a  href=\'/du-an/theo-vi-tri/mien-trung.htm\'>Miền Trung</a></li><li><a  href=\'/du-an/theo-vi-tri/mien-nam.htm\'>Miền Nam</a></li><li><a  href=\'/du-an/theo-vi-tri/ngoai-nuoc.htm\'>Ngoài nước</a></li></ul></li><li><a  href=\"/du-an/theo-tien-do.htm\">Theo tiến độ</a><ul class=\"sub-menu\"><li><a  href=\'/du-an/theo-tien-do/da-thi-cong.htm\'>Đã thi công</a></li><li><a  href=\'/du-an/theo-tien-do/dang-thi-cong.htm\'>Đang thi công</a></li></ul></li></ul></li><li><a  href=\"/tin-tuc.htm\">Tin tức<i class=\"fa fa-caret-down\" aria-hidden=\"true\"></i></a><ul class=\"sub-menu\"><li><a  href=\'/tin-tuc/tin-cong-ty.htm\'>Tin công ty</a></li><li><a  href=\'/tin-tuc/tin-cong-truong.htm\'>Tin công trường</a></li><li><a  href=\'/tin-tuc/tin-van-hoa.htm\'>Tin văn hoá</a></li><li><a  href=\'/tin-tuc/nen-tang-cjsc.htm\'>Nền tảng của CJSC</a></li></ul></li><li><a  href=\'/tai-lieu.htm\'>Tài liệu</a></li><li><a  href=\'/tuyen-dung.htm\'>Tuyển dụng</a></li><li><a  href=\'/e-magazine.htm\'>E - Magazine</a></li><li><a class=\"active\" href=\'/lien-he.htm\'>Liên hệ</a></li></ul></li></ul>\r\n            <div class=\"clear\"></div>\r\n        </div>\r\n    </div>\r\n</div>    <div class=\"body\">\r\n		<div class=\"main\">\r\n			<div class=\"breadcrumb\">\r\n    <div class=\"wrap\">\r\n        <ul>\r\n                                                <li>\r\n                                                <a href=\"/\" target=\"_self\">Trang chủ</a>\r\n                                            </li>\r\n                    <li class=\"seperate\"></li>\r\n                                                                <li>Liên hệ</li>\r\n                                    </ul>\r\n        <div class=\"clear\"></div>\r\n    </div>\r\n</div>\r\n			<div class=\"wrap content\">\r\n    <div class=\"row\">\r\n<div class=\"col-xs-12 col-sm-6 col-md-6\">\r\n<h2 class=\"title-3\"><span>Trụ Sở Ch&iacute;nh</span></h2>\r\n\r\n<p>Ph&ograve;ng 411 To&agrave; nh&agrave; TOYOTA Mỹ Đ&igrave;nh, Số 15 Phạm H&ugrave;ng, Quận Nam Từ Li&ecirc;m, Th&agrave;nh phố H&agrave; Nội, Việt Nam.</p>\r\n\r\n<p><span>Tel: +84-24 3 795 7717</span></p>\r\n\r\n<p>Email: cjsc@cjsc.vn</p>\r\n\r\n<p>Hotline: (+84) 983.384.888</p>\r\n<iframe allowfullscreen=\"\" frameborder=\"0\" height=\"auto\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0873510411334!2d105.77796021478456!3d21.029190593139905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453216744d1fd%3A0x120703abd178875c!2sCJSC!5e0!3m2!1svi!2sin!4v1501465207864\" style=\"border:0\" width=\"100%\"></iframe></div>\r\n\r\n<div class=\"col-xs-12 col-sm-6 col-md-6\">\r\n<h2 class=\"title-3\"><span>Li&ecirc;n hệ</span></h2>\r\n\r\n<form action=\"\" method=\"post\">\r\n<div class=\"form-group\"><input class=\"form-control\" id=\"name\" name=\"fullname\" placeholder=\"Họ và tên\" tabindex=\"1\" type=\"text\" /></div>\r\n\r\n<div class=\"form-group\"><input class=\"form-control\" id=\"email\" name=\"email\" placeholder=\"Email\" tabindex=\"2\" type=\"email\" /></div>\r\n\r\n<div class=\"form-group\"><input class=\"form-control\" id=\"phone\" name=\"phonenumber\" placeholder=\"Số điện thoại\" tabindex=\"3\" type=\"text\" /></div>\r\n\r\n<div class=\"form-group\"><input class=\"form-control\" id=\"title\" name=\"title\" placeholder=\"Tiêu đề\" tabindex=\"4\" type=\"text\" /></div>\r\n\r\n<div class=\"form-group\"><textarea class=\"form-control\" name=\"content\" placeholder=\"Nội dung\" rows=\"8\" tabindex=\"5\"></textarea></div>\r\n<input name=\"contact\" type=\"hidden\" value=\"true\" /><button class=\"pull-left\" type=\"submit\">Gửi li&ecirc;n hệ</button></form>\r\n</div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n<div class=\"col-xs-12 col-sm-6\">\r\n<h2 class=\"title-3\"><span>Chi nh&aacute;nh ph&iacute;a Nam</span></h2>\r\n\r\n<p>Ph&ograve;ng 108 To&agrave; nh&agrave; S&agrave;i g&ograve;n Paragon, Số 3 Nguyễn Lương Bằng, Quận 7, Th&agrave;nh phố Hồ Ch&iacute; Minh, Việt Nam</p>\r\n\r\n<p><span>Tel: +84 28 54 111 991</span></p>\r\n\r\n<p><span></span>Email: cjsc@cjsc.vn</p>\r\n\r\n<p>Hotline: &nbsp;(+84) 983.384.888</p>\r\n<iframe allowfullscreen=\"\" frameborder=\"0\" height=\"auto\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8611.64132948336!2d106.71635968688115!3d10.73075257007499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f89959156c9%3A0x2c5cc1c9a9470997!2zVMOyYSBOaMOgIFBhcmFnb24!5e0!3m2!1svi!2s!4v1505895684712\" style=\"border:0\" width=\"100%\"></iframe></div>\r\n\r\n<div class=\"col-xs-12 col-sm-6\">\r\n<h2 class=\"title-3\">&nbsp;</h2>\r\n</div>\r\n</div>\r\n</div>\r\n<style>\r\n    .title-3 {\r\n    position: relative;\r\n    border-bottom: 1px solid #ccc;\r\n    margin-bottom: 20px;\r\n    font-size: 18px;\r\n    padding-bottom: 8px;\r\n}\r\n.title-3 span {\r\n    position: relative;\r\n    border-bottom: 2px solid #007741;\r\n    top: -1px;\r\n    padding-bottom: 8px;\r\n}\r\n.content .row{\r\n    margin-bottom: 30px;\r\n}\r\n.content p{\r\n    margin-bottom: 5px;\r\n}\r\n.content iframe{\r\n    margin-top: 15px;\r\n    height: 310px;\r\n}\r\n.content button{\r\n    background-image: -webkit-linear-gradient(top,#007741 0,#009b55 100%);\r\n    background-image: linear-gradient(to bottom,#007741 0,#009b55 100%);\r\n    color: white;\r\n    font-size: 12px;\r\n    border-radius: 10px;\r\n    padding: 10px 20px;\r\n}\r\n.content button:hover{\r\n    background-image: -webkit-linear-gradient(top,#009b55 0,#007741 100%);\r\n    background-image: linear-gradient(to bottom,#009b55 0,#007741 100%);\r\n    color: white;\r\n}\r\n.content input, .content textarea{\r\n    border: 1px solid #cfcaca;\r\n    border-radius: 0;\r\n}\r\n.content input::placeholder, .content textarea::placeholder {\r\n    /*color: #8f908f;*/\r\n    font-size: 0.9em;\r\n}</style>			\r\n		</div>\r\n		<div class=\"foot\">\r\n    <div class=\"foot-bg\">\r\n        <div>\r\n            <div class=\"wrap\">\r\n                <div class=\"foot-top\">\r\n                    <div class=\"foot-nav\">\r\n<h3>Li&ecirc;n hệ</h3>\r\n<span> </span>\r\n\r\n<div class=\"content-contact\">\r\n<p><span><strong>Trụ sở ch&iacute;nh:</strong></span></p>\r\n\r\n<p><span>P.411 To&agrave; nh&agrave; TOYOTA Mỹ Đ&igrave;nh, 15 Phạm H&ugrave;ng, Nam Từ Li&ecirc;m, H&agrave; Nội.</span></p>\r\n\r\n<p style=\"white-space:nowrap;\">Tel: (+84) 243.7957.717</p>\r\n\r\n<p style=\"white-space:nowrap;\">Fax: (+84-4).3795.7716</p>\r\n\r\n<p><strong>Chi nh&aacute;nh ph&iacute;a Nam:</strong></p>\r\n\r\n<p>P.108, Tầng 10, Th&aacute;p B To&agrave; nh&agrave; S&agrave;i G&ograve;n Paragon, Số 3 Nguyễn Lương Bằng, Quận 7, Tp. HCM</p>\r\n<span> </span>\r\n\r\n<p><span>Tel: (+84) 285.4111.991</span></p>\r\n<span> </span>\r\n\r\n<p><span><strong>Email</strong>: cjsc@cjsc.vn<br />\r\n<strong>Hotline</strong>: (+84) 983.384.888</span><span></span></p>\r\n<span> </span></div>\r\n</div>\r\n<div class=\"foot-nav\">\r\n<h3>Giới thiệu</h3>\r\n\r\n<ul>\r\n	<li><a href=\"http://cjsc.vn/gioi-thieu/tong-quan-ve-cong-ty.htm\">Tổng quan về c&ocirc;ng ty</a></li>\r\n	<li><a href=\"http://cjsc.vn/gioi-thieu/so-do-to-chuc.htm\">Sơ đồ tổ chức</a></li>\r\n	<li><a href=\"http://cjsc.vn/gioi-thieu/thu-danh-gia.htm\">Thư đ&aacute;nh gi&aacute;</a></li>\r\n	<li><a href=\"http://cjsc.vn/gioi-thieu/cong-ty-thanh-vien.htm\">C&ocirc;ng ty th&agrave;nh vi&ecirc;n</a></li>\r\n	<li><a href=\"http://cjsc.vn/gioi-thieu/khach-hang-va-doi-tac.htm\">Kh&aacute;ch h&agrave;ng v&agrave; đối t&aacute;c</a></li>\r\n</ul>\r\n</div>\r\n<div class=\"foot-nav\">\r\n<h3>Dự &Aacute;n</h3>\r\n\r\n<ul>\r\n	<li><a href=\"http://cjsc.vn/du-an/theo-du-an/thiet-ke.htm\">Tư vấn thiết kế</a></li>\r\n	<li><a href=\"http://cjsc.vn/du-an/theo-du-an/thi-cong.htm\">Thi c&ocirc;ng x&acirc;y dựng</a></li>\r\n	<li><a href=\"http://cjsc.vn/du-an/theo-du-an/dan-dung.htm\">X&acirc;y dựng d&acirc;n dụng</a></li>\r\n	<li><a href=\"http://cjsc.vn/du-an/theo-du-an/cong-nghiep.htm\">X&acirc;y dựng c&ocirc;ng nghiệp</a></li>\r\n	<li><a href=\"http://cjsc.vn/du-an/theo-du-an/ha-tang.htm\">Hạ tầng</a></li>\r\n</ul>\r\n</div>\r\n<div class=\"foot-nav\">\r\n<h3>Năng lực</h3>\r\n\r\n<ul>\r\n	<li><a href=\"http://cjsc.vn/gioi-thieu/chung-chi-iso-va-ohsas.htm\">H&ecirc;̣ th&ocirc;́ng quản lý ch&acirc;́t lượng ISO 9001:2015</a></li>\r\n	<li><a href=\"http://cjsc.vn/gioi-thieu/nhan-su.htm\">Năng lực con người</a></li>\r\n	<li><a href=\"http://cjsc.vn/du-an.htm\">Năng lực dự &aacute;n</a></li>\r\n	<li><a href=\"http://cjsc.vn/gioi-thieu/chinh-sach-an-toan-suc-khoe-nghe-nghiep-va-moi-truong.htm\">Quản lý lao đ&ocirc;̣ng</a></li>\r\n</ul>\r\n</div>\r\n<div class=\"foot-nav\">\r\n<h3>Tin tức</h3>\r\n\r\n<ul>\r\n	<li><a href=\"http://cjsc.vn/tin-tuc/tin-cong-ty.htm\">Tin c&ocirc;ng ty</a></li>\r\n	<li><a href=\"http://cjsc.vn/csr.html\">Tin c&ocirc;ng trường</a></li>\r\n	<li><a href=\"http://cjsc.vn/tin-tuc/tin-van-hoa.htm\">Tin văn h&oacute;a</a></li>\r\n	<li><a href=\"http://cjsc.vn/tin-tuc/nen-tang-cjsc.htm\">Nền tảng CJSC</a></li>\r\n</ul>\r\n</div>\r\n                    <div class=\"clear\"></div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"wrap\">\r\n        <div class=\"foot-bottom\">\r\n            <div class=\"left\">\r\n<p>&copy; CJSC. All rights reserved.</p>\r\n</div>\r\n\r\n<div class=\"right\">\r\n<ul>\r\n	<li><a href=\"#\"><span class=\"fa fa-facebook\"></span> </a></li>\r\n	<li><a href=\"#\"><span class=\"fa fa-twitter\"></span> </a></li>\r\n	<li><a href=\"#\"><span class=\"fa fa-google-plus\"></span> </a></li>\r\n</ul>\r\n</div>            <div class=\"clear\"></div>\r\n        </div>\r\n    </div>\r\n</div>	</div>\r\n	<div class=\"btn-top\">\r\n		<a href=\"#\"><img src=\"/assets/frontend/img/btn_top.jpg\" alt=\"Lên đầu trang\"></a>\r\n	</div>\r\n\r\n</body>\n</html>', null, null, null, '1', '1530037117', '1', '1530037117', null, 'cjschtml', 'lienhe.html', null, null, null, null);
 
 -- ----------------------------
--- Table structure for course_user
+-- Table structure for `course_user`
 -- ----------------------------
 DROP TABLE IF EXISTS `course_user`;
 CREATE TABLE `course_user` (
@@ -460,7 +459,7 @@ CREATE TABLE `course_user` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for error_log
+-- Table structure for `error_log`
 -- ----------------------------
 DROP TABLE IF EXISTS `error_log`;
 CREATE TABLE `error_log` (
@@ -487,7 +486,7 @@ INSERT INTO `error_log` VALUES ('6', 'http://aiem.phapluatvavanhoa.com.vn/admin/
 INSERT INTO `error_log` VALUES ('7', 'http://aiem.phapluatvavanhoa.com.vn/admin/settings/buildform/updateform', 'exception \'yii\\base\\ErrorException\' with message \'Module \'imagick\' already loaded\' in Unknown:0\nStack trace:\n#0 [internal function]: yii\\base\\ErrorHandler->handleFatalError()\n#1 {main}', '32', '1487039978', '1', null, 'Module ', 'exception \'yii\\base\\ErrorException\' with message \'Module \'imagick\' already loaded\' in Unknown:0', '1.55.242.132', 'desktop');
 
 -- ----------------------------
--- Table structure for mail_settings
+-- Table structure for `mail_settings`
 -- ----------------------------
 DROP TABLE IF EXISTS `mail_settings`;
 CREATE TABLE `mail_settings` (
@@ -511,7 +510,7 @@ INSERT INTO `mail_settings` VALUES ('3', 'contact_sendmail_template', null, 'Có
 INSERT INTO `mail_settings` VALUES ('4', 'company_sendmail_templete', null, 'Có một đăng ký từ [url]', 'C&oacute; một đăng k&yacute; từ [url]:<br />\r\n&nbsp;\r\n<h4>Th&ocirc;ng tin doanh nghiệp</h4>\r\n\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px;\">\r\n	<tbody>\r\n		<tr>\r\n			<td>T&ecirc;n c&ocirc;ng ty</td>\r\n			<td>[name]</td>\r\n		</tr>\r\n		<tr>\r\n			<td>Loại c&ocirc;ng ty</td>\r\n			<td>[type]</td>\r\n		</tr>\r\n		<tr>\r\n			<td>Quy m&ocirc; c&ocirc;ng ty</td>\r\n			<td>[size]</td>\r\n		</tr>\r\n		<tr>\r\n			<td>Loại h&igrave;nh PBX</td>\r\n			<td>[pbx]</td>\r\n		</tr>\r\n		<tr>\r\n			<td>Ng&ocirc;n ngữ</td>\r\n			<td>[lang]</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<h4>Th&ocirc;ng tin li&ecirc;n hệ</h4>\r\n\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px;\">\r\n	<tbody>\r\n		<tr>\r\n			<td>Họ t&ecirc;n</td>\r\n			<td>[information_name]</td>\r\n		</tr>\r\n		<tr>\r\n			<td>Email</td>\r\n			<td>[information_email]</td>\r\n		</tr>\r\n		<tr>\r\n			<td>Mobile</td>\r\n			<td>[information_mobile]</td>\r\n		</tr>\r\n		<tr>\r\n			<td>Số điện thoại cố định</td>\r\n			<td>[information_phone]</td>\r\n		</tr>\r\n	</tbody>\r\n</table>', '{\"name\":\"[name]\",\"type\":\"[type]\",\"size\":\"[size]\",\"pbx\":\"[pbx]\",\"lang\":\"[lang]\",\"information_name\":\"[information_name]\",\"information_email\":\"[information_email]\",\"information_mobile\":\"[information_mobile]\",\"information_phone\":\"[information_phone]\"}', '1486088358', '1', '1486088358', null);
 
 -- ----------------------------
--- Table structure for manufacturer
+-- Table structure for `manufacturer`
 -- ----------------------------
 DROP TABLE IF EXISTS `manufacturer`;
 CREATE TABLE `manufacturer` (
@@ -537,7 +536,7 @@ INSERT INTO `manufacturer` VALUES ('4', 'Vinaphone', null, '1', '1486058005', '1
 INSERT INTO `manufacturer` VALUES ('6', 'Gmobile', '', '1', '1486398648', '1', '1486398648', null, '0', null);
 
 -- ----------------------------
--- Table structure for mobile
+-- Table structure for `mobile`
 -- ----------------------------
 DROP TABLE IF EXISTS `mobile`;
 CREATE TABLE `mobile` (
@@ -560,7 +559,7 @@ INSERT INTO `mobile` VALUES ('1', 'iOS', '1', '1486057927', '1', '1486398463', '
 INSERT INTO `mobile` VALUES ('2', 'Android', '1', '1486057927', '1', '1486398474', '1', 'vi', '0');
 
 -- ----------------------------
--- Table structure for news
+-- Table structure for `news`
 -- ----------------------------
 DROP TABLE IF EXISTS `news`;
 CREATE TABLE `news` (
@@ -605,7 +604,7 @@ INSERT INTO `news` VALUES ('3', 'PHÁT ĐỘNG CUỘC THI ẢNH GAZA TRONG TIM T
 INSERT INTO `news` VALUES ('4', 'PHÁT ĐỘNG CUỘC THI ẢNH GAZA TRONG TIM TÔI', '<span style=\"font-family: Roboto, sans-serif; font-size: 15px;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>', '', '0', '', '', '', '1', '0', '1530542160', '1530542160', '1', '0', 'pic1.jpg', 'phat-dong-cuoc-thi-anh-gaza-trong-tim-toi', '', '0', null, '0', '0', '0');
 
 -- ----------------------------
--- Table structure for order
+-- Table structure for `order`
 -- ----------------------------
 DROP TABLE IF EXISTS `order`;
 CREATE TABLE `order` (
@@ -639,7 +638,7 @@ CREATE TABLE `order` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for order_product
+-- Table structure for `order_product`
 -- ----------------------------
 DROP TABLE IF EXISTS `order_product`;
 CREATE TABLE `order_product` (
@@ -670,7 +669,7 @@ INSERT INTO `order_product` VALUES ('7', '3', '5', '4200000', '1', '1480443224',
 INSERT INTO `order_product` VALUES ('8', '4', '7', '6500000', '1', '1480443811', '1480443811', null, null);
 
 -- ----------------------------
--- Table structure for product
+-- Table structure for `product`
 -- ----------------------------
 DROP TABLE IF EXISTS `product`;
 CREATE TABLE `product` (
@@ -727,7 +726,7 @@ CREATE TABLE `product` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for product_compare
+-- Table structure for `product_compare`
 -- ----------------------------
 DROP TABLE IF EXISTS `product_compare`;
 CREATE TABLE `product_compare` (
@@ -802,7 +801,7 @@ INSERT INTO `product_compare` VALUES ('50', '136', '3ef8c0cb805381b5538712a67ed5
 INSERT INTO `product_compare` VALUES ('51', '14', '3ef8c0cb805381b5538712a67ed53e9f', '127.0.0.1', '1484581181', '1484581181', null, null, '1');
 
 -- ----------------------------
--- Table structure for project
+-- Table structure for `project`
 -- ----------------------------
 DROP TABLE IF EXISTS `project`;
 CREATE TABLE `project` (
@@ -813,11 +812,11 @@ CREATE TABLE `project` (
   `modified_by` int(11) DEFAULT NULL,
   `created_time` int(11) DEFAULT NULL,
   `modified_time` int(11) DEFAULT NULL,
-  `start_date` int(11) NOT NULL,
-  `end_date` int(11) NOT NULL,
+  `start_date` int(11) DEFAULT NULL,
+  `end_date` int(11) DEFAULT NULL,
   `range_date` varchar(30) DEFAULT NULL,
   `estimation_budget` float NOT NULL DEFAULT '0',
-  `user_id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   `content` text,
   `meta_title` varchar(100) DEFAULT NULL,
@@ -826,15 +825,23 @@ CREATE TABLE `project` (
   `image` varchar(100) DEFAULT NULL,
   `alias` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of project
 -- ----------------------------
-INSERT INTO `project` VALUES ('1', 'Project title', '1', '1', '1', '1530627285', '1530629158', '0', '0', null, '0', '0', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '<span style=\"color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-size: 15px; background-color: rgba(0, 0, 0, 0.25);\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>', '', '', '', 'project.jpg', 'project-title');
+INSERT INTO `project` VALUES ('1', 'LG Innotek Hai Phong factory', '1', '1', '1', '1530627285', '1530634760', '0', '0', null, '0', '0', '', '<p style=\"box-sizing: border-box; margin-bottom: 10px; font-family: Roboto, sans-serif; font-size: 14px;\">Add: Trang Due IP, An Duong District, Hai Phong, Viet Nam.</p>\r\n\r\n<p style=\"box-sizing: border-box; margin-bottom: 10px; font-family: Roboto, sans-serif; font-size: 14px;\">Project: LG Innotek Hai Phong factory phase II.</p>\r\n\r\n<p style=\"box-sizing: border-box; margin-bottom: 10px; font-family: Roboto, sans-serif; font-size: 14px;\">Pakage 1: RC work.</p>\r\n\r\n<p style=\"box-sizing: border-box; margin-bottom: 10px; font-family: Roboto, sans-serif; font-size: 14px;\">Working period: 11/2017 &ndash; 07/2018.<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list1.jpg\" /><br />\r\n<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list2.jpg\" /></p>', '', '', '', 'project_list1(1).jpg', 'lg-innotek-hai-phong-factory');
+INSERT INTO `project` VALUES ('2', 'KREMS Vietnam Factory, Hai Phong', '1', '1', null, '1530636235', '1530636235', null, null, null, '0', null, '', '<p dir=\"ltr\" id=\"docs-internal-guid-1d56c08d-60f7-2239-1b96-c61fa42151ee\" style=\"margin-top: 0pt; margin-bottom: 10pt; line-height: 1.38; text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Add: Trang Due IP, An Duong District, Hai Phong, Viet Nam</span></p>\r\n\r\n<p dir=\"ltr\" style=\"margin-top: 0pt; margin-bottom: 10pt; line-height: 1.38; text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Project: &nbsp;KR EMS Vietnam factory</span></p>\r\n\r\n<p dir=\"ltr\" style=\"margin-top: 0pt; margin-bottom: 10pt; line-height: 1.38; text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Pakage 1: RC work</span></p>\r\n\r\n<p dir=\"ltr\" style=\"margin-top: 0pt; margin-bottom: 10pt; line-height: 1.38; text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Pakage 2: Civil work</span></p>\r\n&nbsp;\r\n\r\n<p dir=\"ltr\" style=\"margin-top: 0pt; margin-bottom: 10pt; line-height: 1.38; text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Working period: 09/2017 &ndash; 02/2018</span></p>\r\n\r\n<p style=\"margin-bottom: 10px; box-sizing: border-box; font-family: Roboto, sans-serif; font-size: 14px;\"><img alt=\"\" src=\"http://ibi.local/images/project/main/project_list1.jpg\" /><br />\r\n<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list2.jpg\" /></p>\r\n\r\n<p style=\"margin-bottom: 10px; box-sizing: border-box; font-family: Roboto, sans-serif; font-size: 14px;\">&nbsp;</p>', '', '', '', 'project_list2(1).jpg', 'krems-vietnam-factory-hai-phong');
+INSERT INTO `project` VALUES ('3', 'Samsung Electronic Vietnam Thai Nguyen project', '1', '1', null, '1530636339', '1530636339', null, null, null, '0', null, '', '<p dir=\"ltr\" id=\"docs-internal-guid-3a10bc92-6108-d121-dfff-df53fc40be0d\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Add: High Tech Complex, Yen Binh I industrial park, Pho Yen, Thai Nguyen.</span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Project: &nbsp;SEVT Yen Binh Metal Complex Construction Works.</span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Pakage 1: Civil work </span></p>\r\n&nbsp;\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Pakage 2: WWT Construction &amp; Civil Work (Die Casting Line)</span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Working period: 2014 - 2015</span></p>\r\n\r\n<p style=\"margin-bottom: 10px; box-sizing: border-box; font-family: Roboto, sans-serif; font-size: 14px;\"><img alt=\"\" src=\"http://ibi.local/images/project/main/project_list1.jpg\" /><br />\r\n<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list2.jpg\" /></p>', '', '', '', 'project_list3(1).jpg', 'samsung-electronic-vietnam-thai-nguyen-project');
+INSERT INTO `project` VALUES ('4', 'Samho press Vina factory project', '1', '1', null, '1530636611', '1530636611', null, null, null, '0', null, '', '<p dir=\"ltr\" id=\"docs-internal-guid-5246bb3e-610c-fc22-8ab1-9761a44fbb4a\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Add: Que Vo IP, Bac Ninh</span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Working period: 2014</span></p>\r\n\r\n<p style=\"margin-bottom: 10px; box-sizing: border-box; font-family: Roboto, sans-serif; font-size: 14px;\"><img alt=\"\" src=\"http://ibi.local/images/project/main/project_list1.jpg\" /><br />\r\n<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list2.jpg\" /></p>', '', '', '', 'project_list4.jpg', 'samho-press-vina-factory-project');
+INSERT INTO `project` VALUES ('5', 'Daeil Tech factory project', '1', '1', null, '1530636682', '1530636682', null, null, null, '0', null, '', '<p dir=\"ltr\" id=\"docs-internal-guid-69da9f0a-610e-2159-d5a1-fece67ffb2c9\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Add: Que Vo IP, Bac Ninh</span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Working period: 2015</span></p>\r\n\r\n<p style=\"margin-bottom: 10px; box-sizing: border-box; font-family: Roboto, sans-serif; font-size: 14px;\"><img alt=\"\" src=\"http://ibi.local/images/project/main/project_list1.jpg\" /><br />\r\n<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list2.jpg\" /></p>', '', '', '', 'project_list5.jpg', 'daeil-tech-factory-project');
+INSERT INTO `project` VALUES ('6', 'Cammsys Vina factory project', '1', '1', null, '1530636774', '1530636774', null, null, null, '0', null, '', '<p dir=\"ltr\" id=\"docs-internal-guid-c06df053-610f-9214-3c33-54080950d649\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Add: Ba Thien IP, Vinh Phuc</span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Working period: 2014</span></p>\r\n\r\n<p style=\"margin-bottom: 10px; box-sizing: border-box; font-family: Roboto, sans-serif; font-size: 14px;\"><img alt=\"\" src=\"http://ibi.local/images/project/main/project_list1.jpg\" /><br />\r\n<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list2.jpg\" /></p>', '', '', '', 'project_list6.jpg', 'cammsys-vina-factory-project');
+INSERT INTO `project` VALUES ('7', 'Project: Vietnam SEV Yen Binh Dormitory Project', '1', '1', null, '1530636833', '1530636833', null, null, null, '0', null, '', '<p dir=\"ltr\" id=\"docs-internal-guid-bfe09662-6110-7c8a-dfeb-2e963db39ef1\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Add: Yen Binh IP, Pho Yen, Thai Nguyen.</span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Working period: 2013-2014</span></p>\r\n\r\n<p style=\"margin-bottom: 10px; box-sizing: border-box; font-family: Roboto, sans-serif; font-size: 14px;\"><img alt=\"\" src=\"http://ibi.local/images/project/main/project_list1.jpg\" /><br />\r\n<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list2.jpg\" /></p>', '', '', '', 'project_list7.jpg', 'project-vietnam-sev-yen-binh-dormitory-project');
+INSERT INTO `project` VALUES ('8', 'Samsung SEV Component 4th project', '1', '1', null, '1530636875', '1530636875', null, null, null, '0', null, '', '<p dir=\"ltr\" id=\"docs-internal-guid-36f90eaa-6111-1fdd-db94-176ea676c083\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Add: Y&ecirc;n Phong IP, Bac Ninh</span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Working period: 2012-2013</span></p>\r\n\r\n<p style=\"margin-bottom: 10px; box-sizing: border-box; font-family: Roboto, sans-serif; font-size: 14px;\"><img alt=\"\" src=\"http://ibi.local/images/project/main/project_list1.jpg\" /><br />\r\n<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list2.jpg\" /></p>', '', '', '', 'project_list1(2).jpg', 'samsung-sev-component-4th-project');
+INSERT INTO `project` VALUES ('9', 'DKUIL Vina Factory Phase 2 Project', '1', '1', '1', '1530636920', '1530636958', null, null, null, '0', null, '', '<p dir=\"ltr\" id=\"docs-internal-guid-ac6985ea-6111-d007-8970-138258c1e476\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Add: Que Vo IP, Bac Ninh</span></p>\r\n\r\n<p dir=\"ltr\" style=\"line-height:1.3800000000000001;margin-top:0pt;margin-bottom:10pt;text-align: justify;\"><span style=\"font-size: 13pt; font-family: &quot;Times New Roman&quot;; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Working period: 2013</span></p>\r\n\r\n<p style=\"margin-bottom: 10px; box-sizing: border-box; font-family: Roboto, sans-serif; font-size: 14px;\"><img alt=\"\" src=\"http://ibi.local/images/project/main/project_list1.jpg\" /><br />\r\n<br />\r\n<img alt=\"\" src=\"http://ibi.local/images/project/main/project_list2.jpg\" /></p>', '', '', '', 'project_list2(2).jpg', 'dkuil-vina-factory-phase-2-project');
 
 -- ----------------------------
--- Table structure for rating
+-- Table structure for `rating`
 -- ----------------------------
 DROP TABLE IF EXISTS `rating`;
 CREATE TABLE `rating` (
@@ -862,7 +869,7 @@ INSERT INTO `rating` VALUES ('13', '2649', 'news', '3', '1456540153', null, '127
 INSERT INTO `rating` VALUES ('14', '2942', 'news', '4', '1456842495', '1', '127.0.0.1');
 
 -- ----------------------------
--- Table structure for sendemail
+-- Table structure for `sendemail`
 -- ----------------------------
 DROP TABLE IF EXISTS `sendemail`;
 CREATE TABLE `sendemail` (
@@ -889,7 +896,7 @@ INSERT INTO `sendemail` VALUES ('5', 'dungnguyenanh@orenj.com', 'dfsdfsdf', 'dfg
 INSERT INTO `sendemail` VALUES ('6', 'dungnguyenanh@orenj.com', 'aaaaaaaaa', 'sdfsdfsdfsf', '1456390369', null, '1456390369', null, 'http://cmstool.com/news/xa-hoi/mien-bac-chim-trong-mua-ret-ha-noi-12-do-c-2581.html');
 
 -- ----------------------------
--- Table structure for settings_cron
+-- Table structure for `settings_cron`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_cron`;
 CREATE TABLE `settings_cron` (
@@ -928,7 +935,7 @@ INSERT INTO `settings_cron` VALUES ('49', 'https://www.vinakids.vn/', 'categorie
 INSERT INTO `settings_cron` VALUES ('50', 'https://www.vinakids.vn/', 'product', '[{\"attribute\":\"`product`.name\",\"tag\":\"#getName\",\"type\":\"text\"},{\"attribute\":\"`product`.content\",\"tag\":\"#motasanpham\",\"type\":\"content\"},{\"attribute\":\"`product`.image\",\"tag\":\".imgThumbZoomMain\",\"type\":\"image\"},{\"attribute\":\"`product`.images\",\"tag\":\"#motasanpham img\",\"type\":\"images\"},{\"attribute\":\"`product`.meta_title\",\"tag\":\"#getName\",\"type\":\"text\"},{\"attribute\":\"`product`.meta_keyword\",\"tag\":\"meta[name=\\\"keywords\\\"]\",\"type\":\"tag\"},{\"attribute\":\"`product`.meta_description\",\"tag\":\"meta[name=\\\"description\\\"]\",\"type\":\"text\"}]', '', '[{\"category_id\":\"100111\",\"link\":\"https://www.vinakids.vn/Quan-ao-be-trai.html\"},{\"category_id\":\"100120\",\"link\":\"https://www.vinakids.vn/Quan-ao-be-gai.html\"},{\"category_id\":\"100132\",\"link\":\"https://www.vinakids.vn/ao-dai-tre-em.html\"},{\"category_id\":\"100135\",\"link\":\"https://www.vinakids.vn/quan-ao-tre-em.html\"}]', '1487694870', '1487697060', '1', '1', '1', '.deal-name a', '0', '', '/page([0-9]+)\\,html/$', 'common\\models\\product\\ProductSearch', '', '', '0');
 
 -- ----------------------------
--- Table structure for settings_field
+-- Table structure for `settings_field`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_field`;
 CREATE TABLE `settings_field` (
@@ -1325,7 +1332,7 @@ INSERT INTO `settings_field` VALUES ('5131', '181', 'description', '0', 'Descrip
 INSERT INTO `settings_field` VALUES ('5132', '181', 'content', '0', 'Content', 'content', '0', '{}', 'c22', '125', '1530628701', '1', '1', null, '0');
 
 -- ----------------------------
--- Table structure for settings_files
+-- Table structure for `settings_files`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_files`;
 CREATE TABLE `settings_files` (
@@ -1359,7 +1366,7 @@ INSERT INTO `settings_files` VALUES ('11', 'Giay-uy-quyen-quyet-toan-TNCN.docx',
 INSERT INTO `settings_files` VALUES ('12', 'payslip.rar', 'images/news/main/payslip.rar', 'images/news/main/', '2581', '1456459490', '1456459490', '1', '0', 'news');
 
 -- ----------------------------
--- Table structure for settings_form
+-- Table structure for `settings_form`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_form`;
 CREATE TABLE `settings_form` (
@@ -1462,7 +1469,7 @@ INSERT INTO `settings_form` VALUES ('182', 'Meta SEO', '', '[{\"label\":\"Meta t
 INSERT INTO `settings_form` VALUES ('183', 'Form', '', '[{\"label\":\"Name\",\"field_type\":\"text\",\"required\":false,\"field_options\":{\"size\":\"large\"},\"status\":true,\"cid\":\"c2\",\"name\":\"name\"},{\"label\":\"Link\",\"field_type\":\"website\",\"required\":false,\"field_options\":{},\"status\":true,\"cid\":\"c6\",\"name\":\"link\"},{\"label\":\"Status\",\"field_type\":\"onoff\",\"required\":false,\"field_options\":{\"options\":[{\"label\":\"ON/OFF\",\"checked\":true}]},\"status\":true,\"cid\":\"c10\",\"name\":\"status\"}]', '126', '1530622163', '1530622277', '1', '1', '1', '1', '0', '0', '0');
 
 -- ----------------------------
--- Table structure for settings_grid
+-- Table structure for `settings_grid`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_grid`;
 CREATE TABLE `settings_grid` (
@@ -1696,7 +1703,7 @@ INSERT INTO `settings_grid` VALUES ('632', '`project`.name', 'Name', '', '', '',
 INSERT INTO `settings_grid` VALUES ('633', '`project`.status', 'Status', '', '', '', '0', '125', '1530627304', '1530627304', '1', '0', '0', '', '', '0', '1', '0', '', '', '0', '', '', '', '', '');
 
 -- ----------------------------
--- Table structure for settings_icon
+-- Table structure for `settings_icon`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_icon`;
 CREATE TABLE `settings_icon` (
@@ -2193,7 +2200,7 @@ INSERT INTO `settings_icon` VALUES ('478', 'fa-shekel', '1', '1', '1423031824', 
 INSERT INTO `settings_icon` VALUES ('479', 'fa-meanpath', '1', '1', '1423031828', '1423031828');
 
 -- ----------------------------
--- Table structure for settings_images
+-- Table structure for `settings_images`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_images`;
 CREATE TABLE `settings_images` (
@@ -2209,7 +2216,7 @@ CREATE TABLE `settings_images` (
   `image_thumb` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `table_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=216 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=237 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of settings_images
@@ -2429,9 +2436,30 @@ INSERT INTO `settings_images` VALUES ('212', 'ao-dai-be-trai-phi-lua-mau-do-dong
 INSERT INTO `settings_images` VALUES ('213', 'ao-dai-be-gai-phi-lua-mau-do-dong-que.jpg', '/images/product/main/ao-dai-be-gai-phi-lua-mau-do-dong-que.jpg', '/images/product/main/', '0', '1487696992', '1487696992', '1', '0', null, 'product');
 INSERT INTO `settings_images` VALUES ('214', 'ao-dai-be-trai-phi-lua-mau-do-dong-que-mau-xanh-1.jpg', '/images/product/main/ao-dai-be-trai-phi-lua-mau-do-dong-que-mau-xanh-1.jpg', '/images/product/main/', '0', '1487697032', '1487697032', '1', '0', null, 'product');
 INSERT INTO `settings_images` VALUES ('215', 'ao-dai-be-trai-phi-lua-mau-do-dong-que-mau-xanh.jpg', '/images/product/main/ao-dai-be-trai-phi-lua-mau-do-dong-que-mau-xanh.jpg', '/images/product/main/', '0', '1487697059', '1487697059', '1', '0', null, 'product');
+INSERT INTO `settings_images` VALUES ('216', 'Slider-3.jpg', 'images/categories/main/Slider-3.jpg', 'images/categories/main/', '100111', '1530632571', '1530632571', '1', '0', null, 'categories');
+INSERT INTO `settings_images` VALUES ('217', 'slider4.jpg', 'images/categories/main/slider4.jpg', 'images/categories/main/', '100111', '1530632597', '1530632597', '1', '0', null, 'categories');
+INSERT INTO `settings_images` VALUES ('218', 'oibi_logo(2).png', 'images/system_setting/main/oibi_logo(2).png', 'images/system_setting/main/', '999999999', '1530633237', '1530633237', '1', '0', null, 'system_setting');
+INSERT INTO `settings_images` VALUES ('219', 'oibi_logo(3).png', 'images/system_setting/main/oibi_logo(3).png', 'images/system_setting/main/', '999999999', '1530633249', '1530633249', '1', '0', null, 'system_setting');
+INSERT INTO `settings_images` VALUES ('220', 'video_img1.png', 'images/categories/main/video_img1.png', 'images/categories/main/', '100111', '1530634334', '1530634334', '1', '0', null, 'categories');
+INSERT INTO `settings_images` VALUES ('221', 'video_img2.png', 'images/categories/main/video_img2.png', 'images/categories/main/', '100111', '1530634384', '1530634384', '1', '0', null, 'categories');
+INSERT INTO `settings_images` VALUES ('222', 'video_img3.png', 'images/categories/main/video_img3.png', 'images/categories/main/', '100111', '1530634413', '1530634413', '1', '0', null, 'categories');
+INSERT INTO `settings_images` VALUES ('223', 'project_list1.jpg', 'images/project/main/project_list1.jpg', 'images/project/main/', '1', '1530634696', '1530634696', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('224', 'project_list2.jpg', 'images/project/main/project_list2.jpg', 'images/project/main/', '1', '1530634726', '1530634726', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('225', 'project_list3.jpg', 'images/project/main/project_list3.jpg', 'images/project/main/', '1', '1530634740', '1530634740', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('226', 'project_list1(1).jpg', 'images/project/main/project_list1(1).jpg', 'images/project/main/', '1', '1530634755', '1530634755', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('227', 'project_list2(1).jpg', 'images/project/main/project_list2(1).jpg', 'images/project/main/', '0', '1530635070', '1530635070', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('228', 'oibi_logo(4).png', 'images/system_setting/main/oibi_logo(4).png', 'images/system_setting/main/', '999999999', '1530635260', '1530635260', '1', '0', null, 'system_setting');
+INSERT INTO `settings_images` VALUES ('229', 'project_list3(1).jpg', 'images/project/main/project_list3(1).jpg', 'images/project/main/', '0', '1530636286', '1530636286', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('230', 'project_list4.jpg', 'images/project/main/project_list4.jpg', 'images/project/main/', '0', '1530636570', '1530636570', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('231', 'project_list5.jpg', 'images/project/main/project_list5.jpg', 'images/project/main/', '0', '1530636653', '1530636653', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('232', 'project_list6.jpg', 'images/project/main/project_list6.jpg', 'images/project/main/', '0', '1530636749', '1530636749', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('233', 'project_list7.jpg', 'images/project/main/project_list7.jpg', 'images/project/main/', '0', '1530636813', '1530636813', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('234', 'project_list1(2).jpg', 'images/project/main/project_list1(2).jpg', 'images/project/main/', '0', '1530636856', '1530636856', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('235', 'video_img2.png', 'images/project/main/video_img2.png', 'images/project/main/', '0', '1530636903', '1530636903', '1', '0', null, 'project');
+INSERT INTO `settings_images` VALUES ('236', 'project_list2(2).jpg', 'images/project/main/project_list2(2).jpg', 'images/project/main/', '9', '1530636954', '1530636954', '1', '0', null, 'project');
 
 -- ----------------------------
--- Table structure for settings_mapping
+-- Table structure for `settings_mapping`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_mapping`;
 CREATE TABLE `settings_mapping` (
@@ -2480,7 +2508,7 @@ INSERT INTO `settings_mapping` VALUES ('69', 'Loại hình pbx', 'id', 'name', '
 INSERT INTO `settings_mapping` VALUES ('70', 'Hiệu ứng', 'id', 'name', 'advertise', '', '1486400649', '1486400649', '1', '0', '1', '', 'return common\\core\\enums\\CategoriesEnum::hieuung();', '', 'common\\models\\admin\\MenuAdminSearch');
 
 -- ----------------------------
--- Table structure for settings_menu_admin
+-- Table structure for `settings_menu_admin`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_menu_admin`;
 CREATE TABLE `settings_menu_admin` (
@@ -2552,7 +2580,7 @@ INSERT INTO `settings_menu_admin` VALUES ('141', '0', 'Quản lý dự án', '',
 INSERT INTO `settings_menu_admin` VALUES ('142', '0', 'Quản lý video', '', '', '4', '1530622042', '1530622060', '1', '1', '1', 'video', 'video', 'index', '126', '0', '1', '1', '0', '0', '0', '1', '0', '0');
 
 -- ----------------------------
--- Table structure for settings_message
+-- Table structure for `settings_message`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_message`;
 CREATE TABLE `settings_message` (
@@ -2574,9 +2602,9 @@ CREATE TABLE `settings_message` (
 -- ----------------------------
 -- Records of settings_message
 -- ----------------------------
-INSERT INTO `settings_message` VALUES ('8', 'lang', 'english', 'Tiếng Anh', 'vi', '1486048987', null, '1', '1530630764');
+INSERT INTO `settings_message` VALUES ('8', 'lang', 'english', 'Tiếng Anh', 'vi', '1486048987', null, '1', '1530636961');
 INSERT INTO `settings_message` VALUES ('9', 'lang', 'english', 'English', 'en', '1486048987', null, '1', '1486049469');
-INSERT INTO `settings_message` VALUES ('10', 'lang', 'vietnamese', 'Tiếng Việt', 'vi', '1486048987', null, '1', '1530630764');
+INSERT INTO `settings_message` VALUES ('10', 'lang', 'vietnamese', 'Tiếng Việt', 'vi', '1486048987', null, '1', '1530636961');
 INSERT INTO `settings_message` VALUES ('11', 'lang', 'vietnamese', 'Vietnammese', 'en', '1486048987', null, '1', '1486049462');
 INSERT INTO `settings_message` VALUES ('12', 'contact', 'thong_tin_co_ban', 'Thông tin cơ bản', 'vi', '1486058799', null, null, '1486058799');
 INSERT INTO `settings_message` VALUES ('13', 'contact', 'thong_tin_co_ban', 'Basic information', 'en', '1486058799', null, '1', '1486193594');
@@ -2711,11 +2739,11 @@ INSERT INTO `settings_message` VALUES ('148', 'contact', 'message_success', 'B�
 INSERT INTO `settings_message` VALUES ('149', 'contact', 'message_success', 'Bạn đã liên hệ thành công. Chúng tôi sẽ xem xét để liên hệ lại bạn trong vòng ít phút tới!', 'en', '1486398143', null, null, '1486398143');
 INSERT INTO `settings_message` VALUES ('150', 'news', 'OIBI News', 'OIBI News', 'vi', '1530577422', '1', null, '1530577422');
 INSERT INTO `settings_message` VALUES ('151', 'news', 'OIBI News', 'OIBI News', 'en', '1530577422', '1', null, '1530577422');
-INSERT INTO `settings_message` VALUES ('152', 'news', 'new_list_title', 'OIBI News', 'vi', '1530578084', '1', '1', '1530630760');
+INSERT INTO `settings_message` VALUES ('152', 'news', 'new_list_title', 'OIBI News', 'vi', '1530578084', '1', '1', '1530635386');
 INSERT INTO `settings_message` VALUES ('153', 'news', 'new_list_title', 'OIBI News', 'en', '1530578084', '1', null, '1530578084');
-INSERT INTO `settings_message` VALUES ('154', 'news', 'new_list_description', 'Updates from company', 'vi', '1530578084', '1', '1', '1530630760');
+INSERT INTO `settings_message` VALUES ('154', 'news', 'new_list_description', 'Updates from company', 'vi', '1530578084', '1', '1', '1530635386');
 INSERT INTO `settings_message` VALUES ('155', 'news', 'new_list_description', 'Updates from company', 'en', '1530578084', '1', null, '1530578084');
-INSERT INTO `settings_message` VALUES ('156', 'common', 'button_more', 'Read more', 'vi', '1530578374', '1', '1', '1530630760');
+INSERT INTO `settings_message` VALUES ('156', 'common', 'button_more', 'Read more', 'vi', '1530578374', '1', '1', '1530635386');
 INSERT INTO `settings_message` VALUES ('157', 'common', 'button_more', 'Read more', 'en', '1530578374', '1', null, '1530578374');
 INSERT INTO `settings_message` VALUES ('158', 'news', 'releated_news', 'TIN TỨC LIÊN QUAN', 'vi', '1530579110', '1', null, '1530579110');
 INSERT INTO `settings_message` VALUES ('159', 'news', 'releated_news', 'TIN TỨC LIÊN QUAN', 'en', '1530579110', '1', null, '1530579110');
@@ -2725,11 +2753,11 @@ INSERT INTO `settings_message` VALUES ('162', 'home', 'our_business', 'Our Busin
 INSERT INTO `settings_message` VALUES ('163', 'home', 'our_business', 'Our Business', 'en', '1530598222', '1', null, '1530598222');
 INSERT INTO `settings_message` VALUES ('164', 'home', 'image_description', 'This is nice for exposing more information about an image.', 'vi', '1530598222', '1', null, '1530598222');
 INSERT INTO `settings_message` VALUES ('165', 'home', 'image_description', 'This is nice for exposing more information about an image.', 'en', '1530598222', '1', null, '1530598222');
-INSERT INTO `settings_message` VALUES ('166', 'news', 'project_list_title', 'PROJECTS', 'vi', '1530617609', '1', '1', '1530630763');
+INSERT INTO `settings_message` VALUES ('166', 'news', 'project_list_title', 'PROJECTS', 'vi', '1530617609', '1', '1', '1530636961');
 INSERT INTO `settings_message` VALUES ('167', 'news', 'project_list_title', 'PROJECTS', 'en', '1530617609', '1', null, '1530617609');
-INSERT INTO `settings_message` VALUES ('168', 'news', 'project_list_description', 'Showcase of our work for clients', 'vi', '1530617610', '1', '1', '1530630763');
+INSERT INTO `settings_message` VALUES ('168', 'news', 'project_list_description', 'Showcase of our work for clients', 'vi', '1530617610', '1', '1', '1530636961');
 INSERT INTO `settings_message` VALUES ('169', 'news', 'project_list_description', 'Showcase of our work for clients', 'en', '1530617610', '1', null, '1530617610');
-INSERT INTO `settings_message` VALUES ('170', 'common', 'button_moredetail', 'More detail', 'vi', '1530627414', '1', '1', '1530630764');
+INSERT INTO `settings_message` VALUES ('170', 'common', 'button_moredetail', 'More detail', 'vi', '1530627414', '1', '1', '1530636961');
 INSERT INTO `settings_message` VALUES ('171', 'common', 'button_moredetail', 'More detail', 'en', '1530627414', '1', null, '1530627414');
 INSERT INTO `settings_message` VALUES ('172', 'project', 'project_list_title', 'PROJECTS', 'vi', '1530629739', '1', null, '1530629739');
 INSERT INTO `settings_message` VALUES ('173', 'project', 'project_list_title', 'PROJECTS', 'en', '1530629739', '1', null, '1530629739');
@@ -2737,7 +2765,7 @@ INSERT INTO `settings_message` VALUES ('174', 'project', 'project_list_descripti
 INSERT INTO `settings_message` VALUES ('175', 'project', 'project_list_description', 'Showcase of our work for clients', 'en', '1530629739', '1', null, '1530629739');
 
 -- ----------------------------
--- Table structure for settings_statistical
+-- Table structure for `settings_statistical`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_statistical`;
 CREATE TABLE `settings_statistical` (
@@ -2761,7 +2789,7 @@ CREATE TABLE `settings_statistical` (
 INSERT INTO `settings_statistical` VALUES ('1', 'News', 'select count(*) from news', '1', '1', '1453348166', '1466845737', 'fa-newspaper-o', '/common/news/index', '99', '1');
 
 -- ----------------------------
--- Table structure for settings_table
+-- Table structure for `settings_table`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_table`;
 CREATE TABLE `settings_table` (
@@ -2835,7 +2863,7 @@ INSERT INTO `settings_table` VALUES ('125', 'Project', 'project', '1530617908', 
 INSERT INTO `settings_table` VALUES ('126', 'Video List', 'settings_video', '1530622008', '1530622008', '1', '0', '1', '', 'id desc', '', '', '0', '0', '', '', null, '1', '1', '1', '1', 'common\\models\\admin\\SettingsVideoSearch', null);
 
 -- ----------------------------
--- Table structure for settings_video
+-- Table structure for `settings_video`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_video`;
 CREATE TABLE `settings_video` (
@@ -2858,40 +2886,7 @@ CREATE TABLE `settings_video` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for settings_webcron
--- ----------------------------
-DROP TABLE IF EXISTS `settings_webcron`;
-CREATE TABLE `settings_webcron` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) DEFAULT NULL,
-  `directory` varchar(255) DEFAULT NULL,
-  `link` longtext,
-  `domain` varchar(255) DEFAULT NULL,
-  `created_time` int(11) DEFAULT NULL,
-  `modified_time` int(11) DEFAULT NULL,
-  `created_by` int(11) DEFAULT NULL,
-  `modified_by` int(11) DEFAULT NULL,
-  `show_log` longtext,
-  `content_file` longtext,
-  `type` tinyint(1) DEFAULT '0',
-  `layout` longtext,
-  `rewrite` longtext,
-  `head` longtext,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of settings_webcron
--- ----------------------------
-INSERT INTO `settings_webcron` VALUES ('19', 'http://cjsc.vn/', 'cjschtml', '[{\"filename\":\"index.html\",\"link\":\"http://cjsc.vn/\",\"content\":\"\",\"content_final\":\"\"}]', 'http://cjsc.vn/', '1529814095', '1529814095', '1', null, null, null, '0', null, null, null);
-INSERT INTO `settings_webcron` VALUES ('20', 'https://nanopay.net/', 'nanopay', '[{\"filename\":\"index.html\",\"link\":\"https://nanopay.net/\",\"content\":\"\",\"content_final\":\"\"}]', 'https://nanopay.net/', '1530026781', '1530026801', '1', '1', null, null, '0', null, null, null);
-INSERT INTO `settings_webcron` VALUES ('21', 'http://giza.com.vn/about/', 'gizaabout', '[{\"filename\":\"about.html\",\"link\":\"http://giza.com.vn/about/\",\"content\":\"\",\"content_final\":\"\"}]', 'http://giza.com.vn/about/', '1530036805', '1530036805', '1', null, null, null, '0', null, null, null);
-INSERT INTO `settings_webcron` VALUES ('22', 'http://giza.com.vn/news/', 'gizaabout', '[{\"filename\":\"news.html\",\"link\":\"http://giza.com.vn/news/\",\"content\":\"\",\"content_final\":\"\"}]', 'http://giza.com.vn/news/', '1530036919', '1530036919', '1', null, null, null, '0', null, null, null);
-INSERT INTO `settings_webcron` VALUES ('23', 'http://giza.com.vn/media/video/', 'gizaabout', '[{\"filename\":\"videos.html\",\"link\":\"http://giza.com.vn/media/video/\",\"content\":\"\",\"content_final\":\"\"}]', 'http://giza.com.vn/media/video/', '1530037022', '1530037022', '1', null, null, null, '0', null, null, null);
-INSERT INTO `settings_webcron` VALUES ('24', 'http://cjsc.vn/lien-he.htm', 'cjschtml', '[{\"filename\":\"lienhe.html\",\"link\":\"http://cjsc.vn/lien-he.htm\",\"content\":\"\",\"content_final\":\"\"}]', 'http://cjsc.vn/lien-he.htm', '1530037114', '1530037114', '1', null, null, null, '0', null, null, null);
-
--- ----------------------------
--- Table structure for settings_web_component
+-- Table structure for `settings_web_component`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_web_component`;
 CREATE TABLE `settings_web_component` (
@@ -2942,7 +2937,7 @@ INSERT INTO `settings_web_component` VALUES ('9', 'MenuTop', 'common\\models\\ca
 INSERT INTO `settings_web_component` VALUES ('10', 'ProductHot', 'common\\models\\product\\ProductSearch', 'id,name,alias,price,image,product.category_id,product.created_time', '[{\"attribute\":\"hot\",\"operator\":\"=\",\"value\":\"StatusEnum::STATUS_ACTIVED\"}]', '', 'id desc', '$limit', '', 'ProductHot', '1', '0', '', '', '1', '1459255555', '1', '1466845692', '1', '[{\"attribute\":\"$limit\",\"operator\":\"=\",\"value\":\"10\"},{\"attribute\":\"$w_h\",\"operator\":\"=\",\"value\":\"[75,75]\"}]', '', '1', '1', '', '1', 'item in ProductHot, ng-repeat=\"item in ProductHot\" ,{{item.id}},{{item.name}},{{item.alias}},{{item.price}},{{item.image}},{{item.category_id}},{{item.created_time}},{{item.link_main}},{{item.image_main}}', '0', '', '', '$w_h');
 
 -- ----------------------------
--- Table structure for settings_web_template
+-- Table structure for `settings_web_template`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_web_template`;
 CREATE TABLE `settings_web_template` (
@@ -2972,7 +2967,7 @@ INSERT INTO `settings_web_template` VALUES ('138', 'header', '', '14', '14648329
 INSERT INTO `settings_web_template` VALUES ('139', 'footer', '', '14', '1464832950', '1', '1464832950', null, null, '0', '', '    public function actionFooterjson() {\n        $this->jsonencode([\n        ]);\n    }', null);
 
 -- ----------------------------
--- Table structure for settings_web_template_component
+-- Table structure for `settings_web_template_component`
 -- ----------------------------
 DROP TABLE IF EXISTS `settings_web_template_component`;
 CREATE TABLE `settings_web_template_component` (
@@ -2991,7 +2986,40 @@ CREATE TABLE `settings_web_template_component` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for system_page
+-- Table structure for `settings_webcron`
+-- ----------------------------
+DROP TABLE IF EXISTS `settings_webcron`;
+CREATE TABLE `settings_webcron` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `directory` varchar(255) DEFAULT NULL,
+  `link` longtext,
+  `domain` varchar(255) DEFAULT NULL,
+  `created_time` int(11) DEFAULT NULL,
+  `modified_time` int(11) DEFAULT NULL,
+  `created_by` int(11) DEFAULT NULL,
+  `modified_by` int(11) DEFAULT NULL,
+  `show_log` longtext,
+  `content_file` longtext,
+  `type` tinyint(1) DEFAULT '0',
+  `layout` longtext,
+  `rewrite` longtext,
+  `head` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of settings_webcron
+-- ----------------------------
+INSERT INTO `settings_webcron` VALUES ('19', 'http://cjsc.vn/', 'cjschtml', '[{\"filename\":\"index.html\",\"link\":\"http://cjsc.vn/\",\"content\":\"\",\"content_final\":\"\"}]', 'http://cjsc.vn/', '1529814095', '1529814095', '1', null, null, null, '0', null, null, null);
+INSERT INTO `settings_webcron` VALUES ('20', 'https://nanopay.net/', 'nanopay', '[{\"filename\":\"index.html\",\"link\":\"https://nanopay.net/\",\"content\":\"\",\"content_final\":\"\"}]', 'https://nanopay.net/', '1530026781', '1530026801', '1', '1', null, null, '0', null, null, null);
+INSERT INTO `settings_webcron` VALUES ('21', 'http://giza.com.vn/about/', 'gizaabout', '[{\"filename\":\"about.html\",\"link\":\"http://giza.com.vn/about/\",\"content\":\"\",\"content_final\":\"\"}]', 'http://giza.com.vn/about/', '1530036805', '1530036805', '1', null, null, null, '0', null, null, null);
+INSERT INTO `settings_webcron` VALUES ('22', 'http://giza.com.vn/news/', 'gizaabout', '[{\"filename\":\"news.html\",\"link\":\"http://giza.com.vn/news/\",\"content\":\"\",\"content_final\":\"\"}]', 'http://giza.com.vn/news/', '1530036919', '1530036919', '1', null, null, null, '0', null, null, null);
+INSERT INTO `settings_webcron` VALUES ('23', 'http://giza.com.vn/media/video/', 'gizaabout', '[{\"filename\":\"videos.html\",\"link\":\"http://giza.com.vn/media/video/\",\"content\":\"\",\"content_final\":\"\"}]', 'http://giza.com.vn/media/video/', '1530037022', '1530037022', '1', null, null, null, '0', null, null, null);
+INSERT INTO `settings_webcron` VALUES ('24', 'http://cjsc.vn/lien-he.htm', 'cjschtml', '[{\"filename\":\"lienhe.html\",\"link\":\"http://cjsc.vn/lien-he.htm\",\"content\":\"\",\"content_final\":\"\"}]', 'http://cjsc.vn/lien-he.htm', '1530037114', '1530037114', '1', null, null, null, '0', null, null, null);
+
+-- ----------------------------
+-- Table structure for `system_page`
 -- ----------------------------
 DROP TABLE IF EXISTS `system_page`;
 CREATE TABLE `system_page` (
@@ -3007,7 +3035,7 @@ CREATE TABLE `system_page` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for system_setting
+-- Table structure for `system_setting`
 -- ----------------------------
 DROP TABLE IF EXISTS `system_setting`;
 CREATE TABLE `system_setting` (
@@ -3019,7 +3047,7 @@ CREATE TABLE `system_setting` (
   `lang` varchar(20) DEFAULT 'en',
   `type` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5371 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5386 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of system_setting
@@ -3041,9 +3069,24 @@ INSERT INTO `system_setting` VALUES ('5367', '1', '1530199251', 'google_site_ver
 INSERT INTO `system_setting` VALUES ('5368', '1', '1530199251', 'geo_region', '', 'vi', 'system_settings_common');
 INSERT INTO `system_setting` VALUES ('5369', '1', '1530199251', 'geo_position', '', 'vi', 'system_settings_common');
 INSERT INTO `system_setting` VALUES ('5370', '1', '1530199251', 'geo_icbm', '', 'vi', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5371', '1', '1530635266', 'web_name', 'IBI construction limited company', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5372', '1', '1530635266', 'favico', 'oibi_logo(4).png', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5373', '1', '1530635266', 'logo', 'oibi_logo.png', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5374', '1', '1530635266', 'email', 'tunghus1993@gmail.com', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5375', '1', '1530635266', 'web_link', '', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5376', '1', '1530635266', 'seoh1', 'AIEM', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5377', '1', '1530635266', 'copyright', '&copy; Copyright 2018 nanopay Corporation. All Rights Reserved.', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5378', '1', '1530635266', 'meta_title', '', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5379', '1', '1530635266', 'meta_keyword', '', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5380', '1', '1530635266', 'meta_description', '', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5381', '1', '1530635266', 'google_analytic', '', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5382', '1', '1530635266', 'google_site_vertification', '', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5383', '1', '1530635266', 'geo_region', '', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5384', '1', '1530635266', 'geo_position', '', 'en-US', 'system_settings_common');
+INSERT INTO `system_setting` VALUES ('5385', '1', '1530635266', 'geo_icbm', '', 'en-US', 'system_settings_common');
 
 -- ----------------------------
--- Table structure for tags
+-- Table structure for `tags`
 -- ----------------------------
 DROP TABLE IF EXISTS `tags`;
 CREATE TABLE `tags` (
@@ -3063,7 +3106,7 @@ INSERT INTO `tags` VALUES ('1', 'thuoc', 'thuoc', '1467154160', '1', '0');
 INSERT INTO `tags` VALUES ('2', 'cho muối vào đồ ăn dặm', 'cho-muoi-vao-do-an-dam', '1467154803', '1', '0');
 
 -- ----------------------------
--- Table structure for thank
+-- Table structure for `thank`
 -- ----------------------------
 DROP TABLE IF EXISTS `thank`;
 CREATE TABLE `thank` (
@@ -3083,7 +3126,7 @@ CREATE TABLE `thank` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for user
+-- Table structure for `user`
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
@@ -3119,7 +3162,7 @@ INSERT INTO `user` VALUES ('1021186', 'htrinh85@gmail.com', 'd21e1a111537ea4e4f0
 INSERT INTO `user` VALUES ('1021187', 'aiem_ott@gmail.com', 'd21e1a111537ea4e4f0e3c7013218124', '0', '1', '', null, 'l30YGtQ4EEo88b_jxVfGWRmi1YTN2v2N', '3', '', '1486199268', '1486199297', '', null, '1', null, '', '', '0', '');
 
 -- ----------------------------
--- Table structure for useronline
+-- Table structure for `useronline`
 -- ----------------------------
 DROP TABLE IF EXISTS `useronline`;
 CREATE TABLE `useronline` (
@@ -3148,7 +3191,7 @@ CREATE TABLE `useronline` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for webaccess
+-- Table structure for `webaccess`
 -- ----------------------------
 DROP TABLE IF EXISTS `webaccess`;
 CREATE TABLE `webaccess` (
@@ -3180,7 +3223,7 @@ CREATE TABLE `webaccess` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for wishlist
+-- Table structure for `wishlist`
 -- ----------------------------
 DROP TABLE IF EXISTS `wishlist`;
 CREATE TABLE `wishlist` (
