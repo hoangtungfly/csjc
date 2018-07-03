@@ -74,6 +74,7 @@ nav.navbar .logo.smaller {
     -moz-transition: margin-top 0.4s;
     -o-transition: margin-top 0.4s;
 }
+
 .smaller #navbar ul.nav {
     margin-top: 10px;
 }
@@ -104,76 +105,6 @@ nav.navbar .logo.smaller {
     font-size: 16px !important;
 }
 
-
-
-
-
-/*nav.navbar {
-    height: 100px;
-    background-color: white;
-    border-bottom: none;
-    box-shadow: 1px 1px 4px #ccc;
-    transition: height 0.4s;
-    -webkit-transition: height 0.4s;
-    -moz-transition: height 0.4s;
-    -o-transition: height 0.4s;
-}*/
-
-
-/*
-nav.navbar.smaller {
-    height: 75px;
-}
-
-
-
-#navbar ul {
-    list-style: none;
-    margin-top: 25px;
-    float: right;
-    transition: margin-top 0.4s;
-    -webkit-transition: margin-top 0.4s;
-    -moz-transition: margin-top 0.4s;
-    -o-transition: margin-top 0.4s;
-}
-
-#navbar ul.smaller {
-    margin-top: 25px;
-}
-
-#navbar ul li {
-    font-size: 20px;
-    font-weight: 300;
-    margin-right: 20px;
-}
-
-
-
-#navbar .dropdown .dropdown-menu {
-    margin-top: 0;
-    padding-top: 5px;
-    border: none;
-    webkit-box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.08);
-    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.08);
-}
-
-#navbar .dropdown .dropdown-menu li {
-    display: block;
-    margin-right: 0;
-}
-
-#navbar .dropdown .dropdown-menu li a {
-    display: block;
-    width: 100%;
-    padding: 8px 20px;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-#navbar .dropdown .dropdown-menu a:hover {
-    background: #eaebea;
-}*/
-
 .jumbotron,
 .jumbotron .slide {
     height: 700px;
@@ -184,27 +115,6 @@ nav.navbar.smaller {
     padding-bottom: 0;
     margin-top: 100px;
     color: white;
-}
-
-.jumbotron .slide_1 {
-    background: #0079AF url(imgs/construction-banner.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.jumbotron .slide_2 {
-    background: #0079AF url(imgs/construction-banner2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.jumbotron .slide_3 {
-    background: #0079AF url(imgs/construction-banner3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .jumbotron .owl-dots {
@@ -241,7 +151,7 @@ nav.navbar.smaller {
     padding: 50px 0 100px;
 }
 
-.section_1 .row_1 h4 {
+.section_1 .row_1 h4, .section_1 .row_2 h4 {
     font-weight: 300;
     font-size: 40px;
     color: #18a854;
@@ -305,7 +215,7 @@ nav.navbar.smaller {
     color: white;
     font-size: 20px;
     font-weight: 300;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .section_1 .row_2 .face {
@@ -364,7 +274,7 @@ nav.navbar.smaller {
     /*margin-left: 55px;*/
     color: #18a854;
     font-weight: 300;
-    font-size: 22px
+    font-size: 35px
 }
 
 .section_2 p {
@@ -391,7 +301,8 @@ nav.navbar.smaller {
     cursor: pointer;
 }
 
-.section_3 .video, .listVideo .video {
+.section_3 .video,
+.listVideo .video {
     margin-bottom: 15px;
 }
 
@@ -477,8 +388,6 @@ footer p {
     color: #bababa;
 }
 
-
-
 /*ABOUT US*/
 
 .company {
@@ -537,8 +446,6 @@ footer p {
 .history p {
     line-height: 26px;
 }
-
-
 
 /*END ABOUT US*/
 
@@ -614,13 +521,6 @@ footer p {
     font-weight: 500;
 }
 
-
-
-
-
-
-
-
 /*END LIST PORJECTS*/
 
 
@@ -637,8 +537,6 @@ footer p {
 }
 
 .projectDetail .content p {}
-
-
 
 /*END PROJECT DETAIL*/
 
@@ -696,8 +594,6 @@ footer p {
     color: white;
 }
 
-
-
 /*END LIST NEWS*/
 
 
@@ -724,8 +620,6 @@ footer p {
     font-size: 22px;
     font-weight: 400;
 }
-
-
 
 /*ENDLIST VIDEOS*/
 
@@ -757,15 +651,23 @@ footer p {
     width: 100%;
 }
 
-
-
-
-
 /*END CONTACT*/
+
+@media (min-width: 1600px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
 
 @media (min-width: 768px) {
     .navbar .dropdown:hover .dropdown-menu {
         display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section_2 .col {
+        padding: 80px;
     }
 }
 
@@ -811,11 +713,13 @@ footer p {
         height: 200px;
     }
 
-    .section_3 .col-xs-4, .listVideo .col-xs-4 {
+    .section_3 .col-xs-4,
+    .listVideo .col-xs-4 {
         width: 50%
     }
 
-    .section_3 .videoTitle, .listVideo .videoTitle {
+    .section_3 .videoTitle,
+    .listVideo .videoTitle {
         top: 15px;
         left: 40px;
         font-size: 18px;
@@ -832,21 +736,19 @@ footer p {
         width: 100%;
     }
     .company h1 {
-    font-size: 44px;
-}
+        font-size: 44px;
+    }
     .company h2 {
-    font-size: 34px;
-}
-.projectsList .col-xs-4 {
-    width: 50%
-}
-
-
-
+        font-size: 34px;
+    }
+    .projectsList .col-xs-4 {
+        width: 50%
+    }
 }
 
 @media (max-width: 767px) {
-    .navbar, .navbar.smaller {
+    .navbar,
+    .navbar.smaller {
         min-height: 50px;
     }
     #navbar ul.nav {
@@ -855,7 +757,8 @@ footer p {
     .navbar-brand {
         padding: 5px 15px;
     }
-    nav.navbar .logo, nav.navbar .logo.smaller {
+    nav.navbar .logo,
+    nav.navbar .logo.smaller {
         width: 100px;
     }
 
@@ -868,7 +771,7 @@ footer p {
     }
 
     .navbar-fixed-top .navbar-collapse {
-        max-height: 400px;
+        max-height: 270px;
     }
 
     .navbar-nav .open .dropdown-menu>li>a {
@@ -889,9 +792,8 @@ footer p {
         max-width: none;
     }
     .company {
-    margin-top: 50px;
-}
-
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 667px) {
@@ -933,7 +835,8 @@ footer p {
         padding: 20px 40px;
     }
 
-    .section_3 .col-xs-4, .listVideo .col-xs-4 {
+    .section_3 .col-xs-4,
+    .listVideo .col-xs-4 {
         width: 100%;
     }
 
@@ -941,22 +844,21 @@ footer p {
         width: 100%;
     }
 
-.timeline ul li {
-    margin: 10px 20px;
-}
+    .timeline ul li {
+        margin: 10px 20px;
+    }
 
-.projectsList .item .content {
-    padding: 10px 15px;
-}
-.projectsList .item h4 {
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-.projectsList .item p {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
+    .projectsList .item .content {
+        padding: 10px 15px;
+    }
+    .projectsList .item h4 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .projectsList .item p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 568px) {
@@ -969,26 +871,25 @@ footer p {
     }
 
     .section_1 .col-xs-3 {
-    width: 100%;
-}
-.jumbotron .col_1 {
-    margin-top: 55px;
-}
-.section_4 h4 {
-    font-size: 23px;
-        line-height: 30px;
-}
-.section_5 .col-xs-4 {
-    width: 100%;
-}
-.services .col-xs-3 {
         width: 100%;
     }
-.projectsList .item .content {
-    padding: 8px 18px;
-}
+    .jumbotron .col_1 {
+        margin-top: 55px;
+    }
+    .section_4 h4 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .section_5 .col-xs-4 {
+        width: 100%;
+    }
+    .services .col-xs-3 {
+        width: 100%;
+    }
+    .projectsList .item .content {
+        padding: 8px 18px;
+    }
     .projectsList .col-xs-4 {
-    width: 100%;
-}
-
+        width: 100%;
+    }
 }

@@ -1,5 +1,5 @@
 <?php
-$is_home_page = isset($this->context->alias) && $this->context->alias == 'trang-chu';
+$is_home_page = isset($this->context->alias) && ($this->context->alias == 'trang-chu' || $this->context->alias == 'home');
 if ($data) {
     foreach ($data as $key => $item) {
         if(isset($item['type']) && $item['type']) {

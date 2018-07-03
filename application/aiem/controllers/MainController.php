@@ -17,19 +17,27 @@ class MainController extends AiemController {
 
     public function actionIndex() {
         $alias = trim($this->getParam('alias'));
+        $lang = session()->has('lang') ? session()->get('lang'): app()->language;
+        switch ($lang) {
+            case 'vi-VI' : 
+                $lang = LanguageEnum::VI;                break;
+            default :
+                $lang = LanguageEnum::EN;                break;
+        }
         if(!$alias) {
-            $model = CategoriesSearch::find()->where(['home' => StatusEnum::STATUS_ACTIVED,'lang' => LanguageEnum::VI])->orderBy('id desc')->one();
+            $model = CategoriesSearch::find()->where(['home' => StatusEnum::STATUS_ACTIVED,'lang' => $lang])->orderBy('id desc')->one();
         } else {
-            if($alias == 'en') {
-                $model = CategoriesSearch::find()->where(['home' => StatusEnum::STATUS_ACTIVED,'lang' => LanguageEnum::EN])->orderBy('id desc')->one();
-            } else {
+//            if($alias == 'en') {
+//                $model = CategoriesSearch::find()->where(['home' => StatusEnum::STATUS_ACTIVED,'lang' => LanguageEnum::EN])->orderBy('id desc')->one();
+//            } 
+//            else {
                 $model = CategoriesSearch::findOne(['alias' => $alias]);
-            }
+//            }
         }
         if (!$model) {
             $this->pageNotFound();
         }
-        
+                
         $alias = $model->alias;
         $this->alias = $model->alias;
         app()->language = $model->lang;

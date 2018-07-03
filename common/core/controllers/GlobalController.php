@@ -33,12 +33,13 @@ class GlobalController extends Controller {
             session()->set('lang', $_REQUEST['lang']);
             app()->language = $_REQUEST['lang'];
         } else {
-            if(session()->has('lang')) {
-                app()->language = session()->get('lang');
-            } else {
+//            if(session()->has('lang')) {
+//                app()->language = session()->get('lang');
+//            } else {
                 app()->language = app()->params['language'];
-            }
+//            }
         }
+        
     }
     
     public function setAtrrbuteConfigByContext($config) {
