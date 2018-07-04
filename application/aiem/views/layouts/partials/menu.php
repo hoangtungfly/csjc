@@ -17,6 +17,7 @@ $menuLang = [
         'lang'  => 'vi',
     ],
 ];
+$config = $this->context->array_config();
 ?>
 
 <div id="navbar" class="navbar-collapse collapse">
@@ -38,9 +39,9 @@ $menuLang = [
             <?php } ?>
         <?php } ?>
         <li>
-            <a class="icon" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-            <a class="icon" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a class="icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="icon" href="<?=isset($config['facebook']) ? $config['facebook']: ''?>"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a class="icon" href="<?=isset($config['twitter']) ? $config['twitter']: ''?>"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a class="icon" href="<?=isset($config['linkin']) ? $config['linkin']: ''?>"><i class="fab fa-linkedin-in"></i></a>
         </li>
 <!--        <div class="language">
             <?php foreach($menuLang as $key => $menu) { ?>

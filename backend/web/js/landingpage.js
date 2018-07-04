@@ -54,6 +54,9 @@ $.fn.landingpage = function(options) {
             case 'arraymanyjson':
                 html = '<textarea style="display:none;" data-name="name,link,image,altimage" data-placeholder="name,link,image,altimage" data-type="textarea,text,image,text" data-width="780,780,600,600" data-namevalue="' + name + '" class="fl form-control landingpage_cl_' + name + ' json_manyjson setting_array_landingpage ' + cl + '" placeholder="' + placeholder + '">' + value + '</textarea>';
                 break;
+            case 'arraymanyjsoncolumns':
+                html = '<textarea style="display:none;" data-name="name,link,image,altimage,description" data-placeholder="name,link,image,title,description" data-type="textarea,text,image,text,textarea" data-width="780,780,600,600,780" data-namevalue="' + name + '" class="fl form-control landingpage_cl_' + name + ' json_manyjson setting_array_landingpage ' + cl + '" placeholder="' + placeholder + '">' + value + '</textarea>';
+                break;
             case 'arraymanyjsondescription':
                 html = '<textarea style="display:none;" data-name="name,link,image,altimage,description" data-placeholder="name,link,image,altimage,description" data-type="text,text,image,text,textarea" data-width="600,600,600,600,900" data-namevalue="' + name + '" class="fl form-control landingpage_cl_' + name + ' json_manyjson setting_array_landingpage ' + cl + '" placeholder="' + placeholder + '">' + value + '</textarea>';
                 break;

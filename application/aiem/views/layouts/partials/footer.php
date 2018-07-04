@@ -5,6 +5,8 @@ use common\models\category\CategoriesSearch;
 $config = $this->context->array_config();
 $menufooter = CategoriesSearch::FooterMenu();
 $alias = $this->getParam('alias');
+$phone = isset($config['hotline']) ? $config['hotline'] : '';
+$email = isset($config['email']) ? $config['email'] : '';
 ?>
 
 <div class="container-fluid section_5">
@@ -26,16 +28,20 @@ $alias = $this->getParam('alias');
             <div class="col-xs-4">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="#">ADD: NO 32, LOT 06, ZONE 4.1CC, LANG HA -  THANH XUAN STREET, NHAN CHINH WARD, THANH XUAN DISTRICT,  HA NOI</a></li>
-                    <li><a href="tel:+84-24-6652-3588">TEL : +84-24-6652-3588</a></li>
-                    <li><a href="mailto:IBICON.INFO@GMAIL.COM">EMAIL: IBICON.INFO@GMAIL.COM</a></li>
+                    <li><a href="javascript:void(0);">ADD: <?=isset($config['address']) ? $config['address'] : ''?></a></li>
+                    <?php if($phone){?>
+                    <li><a href="tel:<?=$phone?>">TEL : <?=($phone)?></a></li>
+                    <?php } ?>
+                    <?php if($phone){?>
+                    <li><a href="mailto:<?=$email?>">EMAIL: <?= ($email)?></a></li>
+                    <?php } ?>
                 </ul>
             </div>
             <div class="col-xs-4">
                 <h4>Connect With Us</h4>
-                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="<?=isset($config['facebook']) ? $config['facebook']: ''?>"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="<?=isset($config['twitter']) ? $config['twitter']: ''?>"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="<?=isset($config['linkin']) ? $config['linkin']: ''?>"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>

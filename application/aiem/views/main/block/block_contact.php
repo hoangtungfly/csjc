@@ -8,24 +8,34 @@ use yii\helpers\Html;
 
 $email = SystemSettingSearch::getValue('email');
 $config = $this->context->array_config();
+$adddress = isset($config['address']) ? $config['address'] : '';
+$phone = isset($config['phone']) ? $config['phone'] : '';
+$email = isset($config['email']) ? $config['email'] : '';
+$hotline = isset($config['hotline']) ? $config['hotline'] : '';
 ?>
 <div class="container company">
-    <h1 class="text-center"><?= $item['title'] ?></h1>
-    <h2 class="text-center"><?= $item['description'] ?></h2>
+    <h1 class="text-center"><?= isset($item['title']) ? $item['title']: '' ?></h1>
+    <h2 class="text-center"><?= isset($item['description']) ? $item['description'] : '' ?></h2>
     <hr>
 </div>
 
 <div class="container contact">
     <div class="row_1">
         <div class="col-xs-6">
-            <h4>TRỤ SỞ CHÍNH</h4>
+            <h4><?= strtoupper(SettingsMessageSearch::t('contact', 'head_quarters', 'HEAD QUARTERS'))?></h4>
             <div class="content">
-                <p>Phòng 411 Toà nhà TOYOTA Mỹ Đình, Số 15 Phạm Hùng, Quận Nam Từ Liêm, Thành phố Hà Nội, Việt Nam.</p>
-                <p>Tel: +84-24 3 795 7717</p>
-                <?php if(isset($config['email']) && $config['email']):?>
-                <p>Email: <?=$config['email']?></p>
+                <?php if($adddress) {?>
+                <p><?=$adddress?></p>
+                <?php }?>
+                <?php if($phone) {?>
+                <p><a href="tel:<?=$phone?>">Tel: <?=$phone?></a></p>
+                <?php } ?>
+                <?php if($email):?>
+                <p>Email: <a href="mailto:<?=$email?>"><?=$email?></a></p>
                 <?php endif;?>
-                <p>Hotline: (+84) 983.384.888</p>
+                <?php if($hotline) {?>
+                <p>Hotline:<a href="tel:<?=$hotline?>"><?=$hotline?></a></p>
+                <?php } ?>
             </div>
             <iframe height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=hanoi&key=AIzaSyBD1yh4p30kaKpA2idu_e_rcR1GZkUYXCA" allowfullscreen></iframe>
         </div>
@@ -53,7 +63,7 @@ $config = $this->context->array_config();
                 ]);
                 echo Html::hiddenInput('lang', app()->language);
                 ?>
-                <h4>LIÊN HỆ</h4>
+                <h4><?= strtoupper(SettingsMessageSearch::t('contact', 'contact_us', 'Contact us'))?></h4>
                 <?= $form->field($model, 'name')->textInput(['placeholder' => SettingsMessageSearch::t('contact', 'name', 'Tên của bạn')]) ?>
                 <?= $form->field($model, 'email')->textInput(['placeholder' => SettingsMessageSearch::t('contact', 'email', 'Email')]) ?>
                 <?= $form->field($model, 'phone')->textInput(['placeholder' => SettingsMessageSearch::t('contact', 'phone', 'Điện thoại của bạn')]) ?>
